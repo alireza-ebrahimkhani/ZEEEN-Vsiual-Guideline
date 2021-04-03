@@ -75,14 +75,6 @@ img {
   background-color: unset;
 }
 
-.lottie > svg {
-  border: 1px solid #b5baba;
-}
-
-.brLess > svg {
-  border: 0px solid #b5baba;
-}
-
 .lottie--dont > svg {
   border: 1px solid #b5baba;
   border-bottom: 8px solid  #d73400;

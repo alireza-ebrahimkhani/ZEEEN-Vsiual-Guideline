@@ -72,12 +72,6 @@ body{
  .black , .black > svg{
   background-color: unset;
  }
- .lottie>svg{
-   border: 1px solid $m1;
- }
- .brLess>svg{
-  border: 0px solid $m1;
-}
  .lottie--dont > svg{
   border: 1px solid $m1;
   border-bottom: 8px solid  #d73400;
