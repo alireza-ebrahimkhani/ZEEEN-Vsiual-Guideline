@@ -1,0 +1,70 @@
+
+
+.imgComparison img{
+  display: block;
+}
+.imgComparison{
+    width : 100%;
+    position: relative;
+    overflow: hidden;
+    &__wrapper{
+      display: inline-block;
+      width:100%;
+      position: relative;
+      }
+    &__resizableFrame{
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      display: inline-block;
+      top:0;
+      overflow-x: hidden;
+      
+    }
+    &__fixedFrame{
+      position: relative;
+      width: 100%;
+    }
+}
+
+
+/* The slider itself */
+
+.imgComparison__silder {
+  -webkit-appearance: none; 
+  appearance: none;
+  position: relative;
+  width: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background: $adr-nm-m; 
+  outline: none; 
+  margin: 4rem 0 1rem 0;
+}
+
+
+
+.imgComparison__silder::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 16px; 
+  height: 16px; 
+  border: 1px solid $adr-primaryColor;
+  background: $adr-black; 
+  cursor: pointer; 
+  transition: .3s all ease;
+}
+.imgComparison__silder::-webkit-slider-thumb:hover {
+  background: $adr-primaryColor; 
+  transition: .3s all ease;
+}
+.imgComparison__silder::-moz-range-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 16px; 
+  height: 8px; 
+  border: 1px solid $adr-white;
+  background: $adr-black; 
+  cursor: pointer; 
+}

@@ -1,0 +1,29 @@
+@import 'color';
+
+.tab{
+    width: 100%;
+    &__list{
+        width: 100;
+        border-bottom: 1px solid $adr-nm-s;
+    }
+    &__item{
+        display: inline-block;
+        padding: 2rem;
+        transition: unset;
+        cursor: pointer;
+        &--active{
+            border-bottom: 2px solid $adr-primaryColor;
+        }
+    }
+    &__contents{
+        width: 100%;
+    }
+    &__content{
+        display: none;
+        width: 100%;
+        &--active{
+            display: block;
+        }
+    }
+    
+}

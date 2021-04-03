@@ -1,0 +1,70 @@
+/* table of content start*/
+@import 'color';
+.toc {
+    overflow-y: auto;
+    
+  }
+  .toc > .toc-list {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+  }
+  .toc > .toc-list li {
+    list-style: none;
+  }
+  .toc-list {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  .toc>.toc-list{
+    padding-left: 0;
+  }
+  a.toc-link {
+    color: $adr-nm-h ;
+    height: 100%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+    transition: $motion;
+    &:hover{
+      color: $adr-white ;
+      transition: $motion;
+    }
+  }
+  .is-collapsible {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: $motion;
+  }
+  .is-collapsed {
+    max-height: 0;
+    transition: $motion;
+      }
+  .is-position-fixed {
+    position: fixed ;
+    top: 10rem;
+    
+
+  }
+  .is-active-link {
+    color: $adr-white !important;
+  }
+
+  .is-active-link::before {
+    content: url(../asset/platform/indicator.svg);
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    visibility: visible;
+    margin:0 .5rem 0 0;
+    top: -2px;
+    position: relative;
+    
+  }
+  .node-name--H1{
+      text-transform: uppercase;
+  }
+  .node-name--H2{
+    font-size: 1.75rem !important;
+  }
+  /* table of content end*/

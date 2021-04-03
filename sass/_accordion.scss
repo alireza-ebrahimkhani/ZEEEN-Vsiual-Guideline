@@ -1,0 +1,57 @@
+.accordion{
+    position: relative;
+    width: 100%;
+    &__list{
+        list-style: none;
+        margin: 50px auto;
+    }
+    & .h1 , & .h2 , & .h3 , & .h4 , & .h5 , & .h6 , & .subtitlei , & .subtitleii , & .bodyi , & .bodyii , & .button , & .caption , & .overline{
+        margin: 0;
+        padding-bottom: 0;
+    }
+    & .h1--fa , & .h2--fa , & .h3--fa , & .h4--fa , & .h5--fa , & .h6--fa , & .subtitlei--fa , & .subtitleii--fa , & .bodyi--fa , & .bodyii--fa , & .button--fa , & .caption--fa , & .overline--fa{
+        text-align: left;
+    }
+    & .h1:before , & .h2:before , & .h3:before , & .h4:before , & .h5:before , & .h6:before {
+        margin-top: 0 !important;
+        padding-bottom: 0;
+        height: unset !important;
+    }
+    &__header{
+        cursor: pointer;
+        padding: 16px;
+        border-top: 1px solid $adr-nm-s;
+        transition: $motion;
+        &:hover{
+            background-color: $adr-nm-s;
+            transition: $motion;
+        }
+    }
+    &__item:first-child > &__header {
+        border-top: 0px solid  $adr-nm-s;
+    }
+    &__body{
+        max-height: 0;
+        padding: 0 16px;
+        overflow: hidden;
+        opacity: 0;
+        transition: $motion;
+    }
+    &__body--active{
+        max-height: unset;
+        opacity: 1;
+        padding: 16px 16px;
+        transition: $motion;
+    }
+    &__body--deactive{
+        max-height: 0;
+        padding: 0 16px;
+        overflow: hidden;
+        opacity: 0;
+        transition: $motion;
+    }
+    &__info{
+        float: left;
+        margin-right: 2rem;
+    }
+}

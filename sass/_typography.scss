@@ -1,0 +1,224 @@
+@import 'color';
+@import 'grid';
+$yekanPath: "../asset/font/fa/yekanBakh";
+@font-face {
+    font-family: "yekanBakh";
+    font-weight: 300;
+    src: url('#{$yekanPath}Light.eot');
+    src: url('#{$yekanPath}Light.eot?#iefix') format('embedded-opentype'), 
+        url('#{$yekanPath}Light.ttf') format('ttf'),
+        url('#{$yekanPath}Light.woff') format('woff');
+}
+@font-face {
+    font-family: "yekanBakh";
+    font-weight: 400;
+    src: url('#{$yekanPath}Regular.eot');
+    src: url('#{$yekanPath}Regular.eot?#iefix') format('embedded-opentype'), 
+        url('#{$yekanPath}Regular.ttf') format('ttf'),
+        url('#{$yekanPath}Regular.woff') format('woff');
+}
+@font-face {
+    font-family: "yekanBakh";
+    font-weight: 500;
+    src: url('#{$yekanPath}Medium.eot');
+    src: url('#{$yekanPath}Medium.eot?#iefix') format('embedded-opentype'), 
+        url('#{$yekanPath}Medium.ttf') format('ttf'),
+        url('#{$yekanPath}Medium.woff') format('woff');
+}
+.fa{
+    //display: none;
+    display: none;
+    opacity: 0;
+    
+    &--show{
+        //display: block;
+        display: block;
+        opacity: 1;
+    }
+}
+$faFont: yekanbakh;
+$enFont: Roboto, sans-serif;
+%faType{
+    font-family: $faFont;
+    text-align: right;
+    direction: rtl;
+    
+}
+%enType{
+    font-family: $enFont;
+    &::before{
+        height: 10.5rem;
+        display: block;
+        content: " ";
+        margin-top: -10.5rem;
+        visibility: hidden;
+        @include mobile{
+            height: 14rem;
+            margin-top: -14rem;
+        }
+    }
+}
+@mixin type ($weight, $size){
+    
+    font-weight: $weight;
+    font-size: $size;
+    color:white;
+}
+h1 , .h1{
+    @include type(300, 12rem);
+    @extend %enType;
+    margin-bottom: 3rem;
+    @include mobile{
+        @include type(400, 6.5rem);
+    }
+}
+h2 , .h2{
+    @include type(300, 7.5rem);
+    @extend %enType;
+    margin-bottom: 1rem;
+    @include mobile{
+        @include type(300, 5rem);
+    }
+}
+h3 , .h3{
+    @include type(400, 5.25rem);
+    @extend %enType;
+    margin-bottom: 1rem;
+    @include mobile{
+        @include type(400, 4.5rem);
+    }
+}
+h4 , .h4{
+    @include type(400, 4rem);
+    @extend %enType;
+    @include mobile{
+        @include type(400, 3.5rem);
+    }
+    padding-bottom: 1rem;
+}
+h5 , .h5{
+    @include type(400, 2.75rem);
+    @extend %enType;
+}
+h6 , .h6{
+    @include type(500, 2rem);
+    @extend %enType;
+}
+.subtitlei{
+    @include type(400, 2rem);
+    font-family: $enFont;
+}
+.subtitleii{
+    @include type(300, 1.75rem);
+    font-family: $enFont;
+}
+.bodyi{
+    @include type(400, 2rem);
+    font-family: $enFont;
+}
+.bodyii{
+    @include type(300, 1.75rem);
+    font-family: $enFont;
+}
+.button{
+    @include type(500, 2rem);
+    font-family: $enFont;
+    text-transform: uppercase;
+}
+.caption{
+    @include type(400, 1.5rem);
+    margin-top:1rem;
+    font-family: $enFont;;
+}
+.overline{
+    @include type(300, 1.25rem);
+    font-family: $enFont;
+    letter-spacing: 1.5px;
+}
+a{
+    @include type(400, 2rem);
+    font-family: $enFont;
+    transition: $motion;
+    &:hover{
+        color: $adr-nm-m;
+        transition: $motion;
+    }
+}
+.h1--fa{
+    @include type(300, 12rem);
+    @extend %faType;
+}
+.h2--fa{
+    @include type(300, 7.5rem);
+    @extend %faType;
+}
+.h3--fa{
+    @include type(400, 5.25rem);
+    @extend %faType;
+}
+.h4--fa{
+    @include type(300, 4rem);
+    @extend %faType;
+}
+.h5--fa{
+    @include type(400, 2.75rem);
+    @extend %faType;
+}
+.h6--fa{
+    @include type(400, 2rem);
+    @extend %faType;
+}
+.subtitlei--fa{
+    @include type(400, 2rem);
+    @extend %faType;
+}
+.subtitleii--fa{
+    @include type(300, 1.75rem);
+    @extend %faType;
+}
+.bodyi--fa{
+    @include type(400, 2rem);
+    @extend %faType;
+}
+.bodyii--fa{
+    @include type(400, 1.75rem);
+    @extend %faType;
+    line-height: 21px;
+}
+.button--fa{
+    @include type(400, 2rem);
+    @extend %faType;
+    line-height: 19px;
+}
+.caption--fa{
+    @include type(400, 1.5rem);
+    @extend %faType;
+}
+.overline--fa{
+    @include type(300, 1.25rem);
+    @extend %faType;
+}
+.do{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color:#26c260;
+    padding-top:2rem;
+    font-family: $enFont;
+    margin-bottom: -.75rem;
+}
+.dont{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #d73400;
+    padding-top:2rem;
+    font-family: $enFont;
+    margin-bottom: -.75rem;
+}
+.allowed{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fdc215;
+    padding-top:2rem;
+    margin-bottom: -.75rem;
+    font-family: $enFont;
+}
