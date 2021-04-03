@@ -3,16 +3,20 @@
 .tab{
     width: 100%;
     &__list{
-        width: 100;
-        border-bottom: 1px solid $adr-nm-s;
-    }
+        margin-top: 3rem;
+        display: inline-block;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        
+}
     &__item{
         display: inline-block;
         padding: 2rem;
         transition: unset;
         cursor: pointer;
         &--active{
-            border-bottom: 2px solid $adr-primaryColor;
+            border-bottom: 2px solid $p;
         }
     }
     &__contents{

@@ -1,10 +1,10 @@
 $desktopx: 1600px;
 $desktop:1200px;
-$tablet: 900px;
-$mobile: 600px;
+$tablet: 1024px;
+$mobile: 700px;
 @mixin grid(){
     width: 100%;
-    padding: 0 3rem;
+    padding: 0 6rem;
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
     gap: 3rem;
@@ -35,14 +35,14 @@ $mobile: 600px;
     transition: unset;
     @include grid();
     @include desktop(){
-        padding: 0 3rem;
+        padding: 0 6rem;
         grid-template-columns: repeat(12 , 1fr);
         gap: 3rem;
     }
     @include tablet(){
-        padding: 0 2rem;
+        padding: 0 3rem;
         grid-template-columns: repeat(8 , 1fr);
-        gap: 2rem;
+        gap: 3rem;
     }
     @include mobile(){
         padding: 0 2rem;

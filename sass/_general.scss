@@ -14,7 +14,7 @@ html {
     font-size:8px;
   }
 body{
-    background-color: black;
+    background-color: $h1;
     font-size: 8px;
 }
 
@@ -24,17 +24,17 @@ body{
   
 
   ::-webkit-scrollbar-track {
-    background : $adr-nm-s;
+    background : $m1;
   }
   
  
   ::-webkit-scrollbar-thumb {
-    background: $adr-nm-d;
+    background: $d1;
   }
   
 
   ::-webkit-scrollbar-thumb:hover {
-    background: $adr-nm-m; 
+    background: $d1; 
 }
 
 .lazy-wrapper{
@@ -47,38 +47,44 @@ body{
 }
 
 .br{
- border: 1px solid $adr-nm-s;
+ border: 1px solid $m1;
 }
 .br--tab{
-  border: 1px solid $adr-nm-s;
+  border: 1px solid $m1;
   border-top:0;
  }
  .br--dont{
-  border: 1px solid $adr-nm-s;
+  border: 1px solid $m1;
   border-bottom: 8px solid  #d73400;
 }
 .br--do{
-  border: 1px solid $adr-nm-s;
+  border: 1px solid $m1;
   border-bottom: 8px solid #26c260;
 }
 .br--allowed{
-  border: 1px solid $adr-nm-s;
+  border: 1px solid $m1;
   border-bottom: 8px solid #fdc215;
 }
  img{
    width: 100%;
-   background-color: white;
+   display: block;
  }
  .black , .black > svg{
   background-color: unset;
  }
  .lottie>svg{
-   border: 1px solid $adr-nm-s;
+   border: 1px solid $m1;
  }
  .brLess>svg{
-  border: 0px solid $adr-nm-s;
+  border: 0px solid $m1;
 }
  .lottie--dont > svg{
-  border: 1px solid $adr-nm-s;
+  border: 1px solid $m1;
   border-bottom: 8px solid  #d73400;
+}
+.white{
+  background-color: white;
+}
+.grey{
+  background-color: $h1;
 }
