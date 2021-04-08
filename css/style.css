@@ -14,6 +14,20 @@ html {
 body {
   background-color: #082B96;
   font-size: 8px;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+
+.turnBlack {
+  background-color: black;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+
+.turnBlue {
+  background-color: #082B96;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
 }
 
 ::-webkit-scrollbar {
@@ -84,8 +98,8 @@ img {
   background-color: white;
 }
 
-.grey {
-  background-color: #eaebeb;
+.blue {
+  background-color: #082B96;
 }
 
 .wr {
@@ -976,7 +990,7 @@ a.toc-link:hover {
 }
 
 .imgComparison__resizableFrame {
-  width: 0%;
+  width: 50%;
   height: 100%;
   position: absolute;
   display: inline-block;

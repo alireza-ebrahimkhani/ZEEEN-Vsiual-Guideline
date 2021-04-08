@@ -13,8 +13,17 @@ html {
     font-size:8px;
   }
 body{
-    background-color: #082B96;
+    background-color: $blue7;
     font-size: 8px;
+    transition: $motion;
+}
+.turnBlack{
+  background-color: $b;
+  transition: $motion;
+}
+.turnBlue{
+  background-color: $blue7;
+  transition: $motion;
 }
 
 ::-webkit-scrollbar {
@@ -78,6 +87,6 @@ body{
 .white{
   background-color: white;
 }
-.grey{
-  background-color: $h1;
+.blue{
+  background-color: $blue7;;
 }
