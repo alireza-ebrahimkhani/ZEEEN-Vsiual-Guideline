@@ -22,40 +22,54 @@
     </div>
     <div class="header__sideBar">
       <div class="header__logo">
-        <svg  x="0px" y="0px" class="header__logoSvg" viewBox="0 0 54 12" style="enable-background:new 0 0 54 12;" xml:space="preserve">
-          <g id="Layer_1">
-            <polygon points="-5532,-226.2 -5532,-148.7 -5570.7,-148.7 -5570.7,-226.2 -5648.2,-226.2 -5648.2,-148.7 -5686.9,-148.7 
-		-5686.9,-226.2 -5764.3,-226.2 -5764.3,-71.3 -5454.5,-71.3 -5454.5,-226.2 	" />
+        <svg class="header__logoSvgStatic" x="0px" y="0px" viewBox="0 0 62 24"
+          style="enable-background:new 0 0 62 24;" xml:space="preserve">
+          <g id="Layer_6">
+            <polygon points="2,0 2,4 12.7,4 0,24 18,24 18,20 7.2,20 20,0 	" />
           </g>
-          <g id="Isolation_Mode">
-            <g>
-              <polygon points="1,0 1,2 6.4,2 0,12 9,12 9,10 3.6,10 10,0 		" />
-              <polygon points="12,12 20,12 20,10 14,10 14,7 20,7 20,5 14,5 14,2 20,2 20,0 12,0 		" />
-              <polygon points="23,12 31,12 31,10 25,10 25,7 31,7 31,5 25,5 25,2 31,2 31,0 23,0 		" />
-              <polygon points="34,12 42,12 42,10 36,10 36,7 42,7 42,5 36,5 36,2 42,2 42,0 34,0 		" />
-              <polygon points="52,0 52,8.2 47,0 45,0 45,12 47,12 47,3.8 52,12 54,12 54,0 		" />
-            </g>
+          <g id="Layer_5">
+            <polygon points="24.1,24 40,24 40,20 28,20 28,14 40,14 40,10 28,10 28,4 40,4 40,0 24,0 	" />
+          </g>
+          <g id="Layer_4">
+            <polygon points="62,20 50,20 50,14 62,14 62,10 50,10 50,4 62,4 62,0 46,0 46,24 62,24 	" />
+          </g>
+        </svg>
+        <svg class="header__logoSvgDynamic" x="0px" y="0px" viewBox="0 0 40 24"
+          style="enable-background:new 0 0 40 24;" xml:space="preserve">
+          <g id="Layer_3">
+            <polygon points="0,24 16,24 16,20 4,20 4,14 16,14 16,10 4,10 4,4 16,4 16,0 0,0 	" />
+          </g>
+          <g id="Layer_2">
+            <polygon points="36,0 36,16.2 25.8,0 22,0 22,24 26,24 26,7.8 36.2,24 40,24 40,0 	" />
           </g>
         </svg>
       </div>
-      <ul class="header__items">
-        <li class="header__items"><a class="header__item" href="">Brand Story</a></li>
-        <li class="header__items">
-          <a class="header__item" href="">Corporate Identity</a>
-          <nav class="toc js-toc"></nav>
-        </li>
-        <li class="header__items"><a class="header__item" href="">Brand Expression</a></li>
-        <li class="header__items"><a class="header__item" href="">Digital Products</a></li>
-      </ul>
+      <div class="header__items ">
+        <ul>
+          <li class="header__item"><a class="header__item" href="">Brand Story</a></li>
+          <li class="header__item">
+            <a class="header__item header__item--active" href="">Corporate Identity</a>
+            <nav class="toc js-toc header__nav"></nav>
+          </li>
+          <li class="header__item"><a class="header__item" href="">Brand Expression</a></li>
+          <li class="header__item"><a class="header__item" href="">Digital Products</a></li>
+        </ul>
+        <br><br><br>
+      </div>
       <div class="header__translate">
-        <spam class="header__transtxt bodyi">Fa</spam>
         <div class="header__transSwitch" onclick="toggleSwitch()">
           <div class="header__transPin"></div>
+          <div class="header__transLine"></div>
         </div>
+        <spam class="header__transtxt bodyi">Fa</spam>
       </div>
     </div>
   </header>
-  <main class="main wr">
+  <header class="subHeader wr--oneColl">
+    <p class="subHeader__breadCrum">Corporate Identity</p>
+    <p class="subHeader__description">BRAND GUIDELINE 2021</p>
+  </header>
+  <main class="main wr--oneColl">
     <article class="js-toc-content main__article">
       <!-- logo start -->
       <h1 id="logo">Logo</h1>
@@ -66,15 +80,15 @@
           <div class="wr wr--full">
             <div class="col6">
               <p class="bodyi">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Eaque enim suscipit ea corporis aut dolor nihil reprehenderit sed, 
-                maxime, alias recusandae consequuntur, labore quae atque 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eaque enim suscipit ea corporis aut dolor nihil reprehenderit sed,
+                maxime, alias recusandae consequuntur, labore quae atque
                 repellendus quasi ducimus fugit ipsa!
               </p>
             </div>
             <div class="col6">
               <p class="bodyi--fa col6 fa">
-                
+
               </p>
             </div>
             <div class="col12">
@@ -106,15 +120,15 @@
           <div class="wr wr--full">
             <div class="col6">
               <p class="bodyi">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Eaque enim suscipit ea corporis aut dolor nihil reprehenderit sed, 
-                maxime, alias recusandae consequuntur, labore quae atque 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eaque enim suscipit ea corporis aut dolor nihil reprehenderit sed,
+                maxime, alias recusandae consequuntur, labore quae atque
                 repellendus quasi ducimus fugit ipsa!
               </p>
             </div>
             <div class="col6">
               <p class="bodyi--fa col6 fa">
-                
+
               </p>
             </div>
             <div class="col12">
@@ -142,15 +156,15 @@
           <div class="wr wr--full">
             <div class="col6">
               <p class="bodyi">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Eaque enim suscipit ea corporis aut dolor nihil reprehenderit sed, 
-                maxime, alias recusandae consequuntur, labore quae atque 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eaque enim suscipit ea corporis aut dolor nihil reprehenderit sed,
+                maxime, alias recusandae consequuntur, labore quae atque
                 repellendus quasi ducimus fugit ipsa!
               </p>
             </div>
             <div class="col6">
               <p class="bodyi--fa col6 fa">
-                
+
               </p>
             </div>
             <div class="col12">
@@ -172,14 +186,14 @@
           </div>
         </section>
         <!-- logo_englishLogotype end -->
-        
+
         <!-- logo_variations start -->
         <h2 id="logo_variations">Logo Variations</h2>
         <section>
           <div class="wr wr--full">
             <div class="col6">
               <p class="bodyi">
-                ZEEEN will represent itself in 9 variations. 
+                ZEEEN will represent itself in 9 variations.
                 Each variation designed to communicate with audience in different circumstances or media.
                 The bilingual version of the logo is the main lock-up for our brand.
               </p>
@@ -251,7 +265,8 @@
           <div class="wr wr--full">
             <div class="col6">
               <p class="bodyi">
-                Clear space is defined as the space that no other element explicit or implicit shall cross in relation to the Logo.
+                Clear space is defined as the space that no other element explicit or implicit shall cross in relation
+                to the Logo.
                 According to the guide below you can, you can calcute the size of the clear space for each variation.
               </p>
             </div>
@@ -264,7 +279,7 @@
                   <div class="imgComparison__fixedFrame">
                     <img src="asset/logo/logo-24.svg" alt="" class="imgComparison__fixedImg">
                   </div>
-                  <div class="imgComparison__resizableFrame" >
+                  <div class="imgComparison__resizableFrame">
                     <img src="asset/logo/logo-25.svg" alt="" class="imgComparison__resizableImg grey">
                   </div>
                 </div>
@@ -277,7 +292,7 @@
                   <div class="imgComparison__fixedFrame">
                     <img src="asset/logo/logo-26.svg" alt="" class="imgComparison__fixedImg">
                   </div>
-                  <div class="imgComparison__resizableFrame" >
+                  <div class="imgComparison__resizableFrame">
                     <img src="asset/logo/logo-27.svg" alt="" class="imgComparison__resizableImg grey">
                   </div>
                 </div>
@@ -290,7 +305,7 @@
                   <div class="imgComparison__fixedFrame">
                     <img src="asset/logo/logo-28.svg" alt="" class="imgComparison__fixedImg">
                   </div>
-                  <div class="imgComparison__resizableFrame" >
+                  <div class="imgComparison__resizableFrame">
                     <img src="asset/logo/logo-29.svg" alt="" class="imgComparison__resizableImg grey">
                   </div>
                 </div>
@@ -303,7 +318,7 @@
                   <div class="imgComparison__fixedFrame">
                     <img src="asset/logo/logo-30.svg" alt="" class="imgComparison__fixedImg">
                   </div>
-                  <div class="imgComparison__resizableFrame" >
+                  <div class="imgComparison__resizableFrame">
                     <img src="asset/logo/logo-31.svg" alt="" class="imgComparison__resizableImg grey">
                   </div>
                 </div>
@@ -316,7 +331,7 @@
                   <div class="imgComparison__fixedFrame">
                     <img src="asset/logo/logo-32.svg" alt="" class="imgComparison__fixedImg">
                   </div>
-                  <div class="imgComparison__resizableFrame" >
+                  <div class="imgComparison__resizableFrame">
                     <img src="asset/logo/logo-33.svg" alt="" class="imgComparison__resizableImg grey">
                   </div>
                 </div>
@@ -329,7 +344,7 @@
                   <div class="imgComparison__fixedFrame">
                     <img src="asset/logo/logo-34.svg" alt="" class="imgComparison__fixedImg">
                   </div>
-                  <div class="imgComparison__resizableFrame" >
+                  <div class="imgComparison__resizableFrame">
                     <img src="asset/logo/logo-35.svg" alt="" class="imgComparison__resizableImg grey">
                   </div>
                 </div>
@@ -342,7 +357,7 @@
                   <div class="imgComparison__fixedFrame">
                     <img src="asset/logo/logo-36.svg" alt="" class="imgComparison__fixedImg">
                   </div>
-                  <div class="imgComparison__resizableFrame" >
+                  <div class="imgComparison__resizableFrame">
                     <img src="asset/logo/logo-37.svg" alt="" class="imgComparison__resizableImg grey">
                   </div>
                 </div>
@@ -369,59 +384,59 @@
             </div>
             <div class="col6 ">
               <div class="lazy-wrapper smallest white" style="padding-bottom: 56.25%">
-                <img class="lazy smallest__img" data-src="asset/logo/logo-15.svg" src="" alt="" style="width: 176px;"/>
+                <img class="lazy smallest__img" data-src="asset/logo/logo-15.svg" src="" alt="" style="width: 176px;" />
               </div>
               <p class="caption">Digital: 176px<br>Print: 6cm</p>
             </div>
             <div class="col6 ">
               <div class="lazy-wrapper smallest white" style="padding-bottom: 56.25%">
-                <img class="lazy smallest__img" data-src="asset/logo/logo-16.svg" src="" alt="" style="width: 272px;"/>
+                <img class="lazy smallest__img" data-src="asset/logo/logo-16.svg" src="" alt="" style="width: 272px;" />
               </div>
               <p class="caption">Digital: 272px<br>Print: 10cm</p>
             </div>
             <div class="col6 ">
               <div class="lazy-wrapper smallest white" style="padding-bottom: 56.25%">
-                <img class="lazy smallest__img" data-src="asset/logo/logo-17.svg" src="" alt="" style="width: 56px;"/>
+                <img class="lazy smallest__img" data-src="asset/logo/logo-17.svg" src="" alt="" style="width: 56px;" />
               </div>
               <p class="caption">Digital: 56px<br>Print: 2cm</p>
             </div>
             <div class="col6 ">
               <div class="lazy-wrapper smallest white" style="padding-bottom: 56.25%">
-                <img class="lazy smallest__img" data-src="asset/logo/logo-18.svg" src="" alt="" style="width: 78px;"/>
+                <img class="lazy smallest__img" data-src="asset/logo/logo-18.svg" src="" alt="" style="width: 78px;" />
               </div>
               <p class="caption">Digital: 78px<br>Print: 3cm</p>
             </div>
             <div class="col6 ">
               <div class="lazy-wrapper smallest white" style="padding-bottom: 56.25%">
-                <img class="lazy smallest__img" data-src="asset/logo/logo-19.svg" src="" alt="" style="width: 204px;"/>
+                <img class="lazy smallest__img" data-src="asset/logo/logo-19.svg" src="" alt="" style="width: 204px;" />
               </div>
               <p class="caption">Digital: 204px<br>Print: 7cm</p>
             </div>
             <div class="col6 ">
               <div class="lazy-wrapper smallest white" style="padding-bottom: 56.25%">
-                <img class="lazy smallest__img" data-src="asset/logo/logo-20.svg" src="" alt="" style="width: 94px;"/>
+                <img class="lazy smallest__img" data-src="asset/logo/logo-20.svg" src="" alt="" style="width: 94px;" />
               </div>
               <p class="caption">Digital: 94px<br>Print: 3.5cm</p>
             </div>
             <div class="col6 ">
               <div class="lazy-wrapper smallest white" style="padding-bottom: 56.25%">
-                <img class="lazy smallest__img" data-src="asset/logo/logo-21.svg" src="" alt="" style="width: 282px;"/>
+                <img class="lazy smallest__img" data-src="asset/logo/logo-21.svg" src="" alt="" style="width: 282px;" />
               </div>
               <p class="caption">Digital: 282px<br>Print: 7cm</p>
             </div>
           </div>
         </section>
         <!-- logo_smallestSize end -->
-        
+
         <!-- logo_partnership start -->
         <h2 id="logo_partnership">Partnership</h2>
         <section>
           <div class="wr wr--full">
             <div class="col6">
               <p class="bodyi">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Eaque enim suscipit ea corporis aut dolor nihil reprehenderit sed, 
-                maxime, alias recusandae consequuntur, labore quae atque 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eaque enim suscipit ea corporis aut dolor nihil reprehenderit sed,
+                maxime, alias recusandae consequuntur, labore quae atque
                 repellendus quasi ducimus fugit ipsa!
               </p>
             </div>
@@ -432,10 +447,10 @@
               <div class="imgComparison">
                 <div class="imgComparison__wrapper">
                   <div class="imgComparison__fixedFrame">
-                    <img src="asset/logo/logo-12.svg" alt="" class="imgComparison__fixedImg br ">
+                    <img src="asset/logo/logo-12.svg" alt="" class="imgComparison__fixedImg  ">
                   </div>
                   <div class="imgComparison__resizableFrame">
-                    <img src="asset/logo/logo-11.svg" alt="" class="imgComparison__resizableImg br ">
+                    <img src="asset/logo/logo-11.svg" alt="" class="imgComparison__resizableImg  ">
                   </div>
                 </div>
                 <input type="range" class="imgComparison__silder" value="0">
@@ -444,7 +459,7 @@
           </div>
         </section>
         <!-- logo_partnership end -->
-        
+
         <!-- logo_appIcon start -->
         <h2 id="logo_appIcon">Media Icon</h2>
         <section>
@@ -464,7 +479,7 @@
               </div>
             </div>
             <div class="col6">
-              <div id="logo_appIcon--corner" class="lottie" >
+              <div id="logo_appIcon--corner" class="lottie">
               </div>
               <script>
                 var svgContainer = document.getElementById("logo_appIcon--corner");
@@ -486,9 +501,9 @@
           <div class="wr wr--full">
             <div class="col6">
               <p class="bodyi">
-                The ZEEEN logo variations are available in three color schemes: blue, white, and colorful. 
-                The black version works best on a white or light background. 
-                The white and colorful versions should be used on dark backgrounds. 
+                The ZEEEN logo variations are available in three color schemes: blue, white, and colorful.
+                The black version works best on a white or light background.
+                The white and colorful versions should be used on dark backgrounds.
               </p>
             </div>
             <div class="col6">
@@ -498,7 +513,7 @@
               <div class="lazy-wrapper" style="padding-bottom: 56.25%">
                 <img class="lazy white" data-src="asset/logo/logo-38.svg" src="" alt="" />
               </div>
-              <p class="caption">Use the black variation on white  backgrounds.</p>
+              <p class="caption">Use the black variation on white backgrounds.</p>
               <p class="caption--fa fa">از نسخه‌ی سیاه در پس‌زمینه‌های روشن استفاده کنید.</p>
             </div>
             <div class="col6">
@@ -538,7 +553,8 @@
           <div class="wr wr--full">
             <div class="col6">
               <p class="bodyi">
-                To maintain the integrity of the ZEEEN logo and to promote the consistency of the brand, please do not misuse it. 
+                To maintain the integrity of the ZEEEN logo and to promote the consistency of the brand, please do not
+                misuse it.
               </p>
             </div>
             <div class="col6">
@@ -629,7 +645,7 @@
         <!-- logo_guidance end -->
       </section>
       <!-- logo section end -->
-      
+
     </article>
   </main>
   <footer></footer>

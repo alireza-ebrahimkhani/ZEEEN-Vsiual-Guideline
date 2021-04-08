@@ -51,13 +51,14 @@
   }
 
   .is-active-link::before {
-    content: url(../asset/platform/indicator.svg);
+    content: "";
     display: inline-block;
-    height: 8px;
+    height: 2px;
     width: 8px;
+    background-color: $b;
     visibility: visible;
     margin:0 .5rem 0 0;
-    top: -2px;
+    top: -4px;
     position: relative;
     
   }

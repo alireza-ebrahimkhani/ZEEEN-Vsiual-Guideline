@@ -1,7 +1,7 @@
 $desktopx: 1600px;
 $desktop:1200px;
-$tablet: 1024px;
-$mobile: 700px;
+$tablet: 1023px;
+$mobile: 600px;
 @mixin grid(){
     width: 100%;
     padding: 0 6rem;
@@ -30,7 +30,6 @@ $mobile: 700px;
     }
 }
 .wr{
-    max-width: 1600px;
     margin: 0 auto;
     transition: unset;
     @include grid();
@@ -48,6 +47,18 @@ $mobile: 700px;
         padding: 0 2rem;
         grid-template-columns: repeat(4 , 1fr);
         gap: 2rem;
+    }
+}
+.wr--oneColl{
+    margin: 0 auto;
+    transition: unset;
+    padding: 0 6rem 0 43.5rem ;
+    
+    @include tablet(){
+        padding: 0 3rem;
+    }
+    @include mobile(){
+        padding: 0 2rem;
     }
 }
 .wr--full{
