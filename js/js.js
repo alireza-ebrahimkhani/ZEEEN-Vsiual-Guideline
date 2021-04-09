@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             body__body.style.overflow = "auto";
             showMenu = false;
         }
-
     });
 
     let colorSection_section = document.querySelectorAll(".panel");
+    console.log(colorSection_section);
     window.addEventListener('scroll', function () {
         let nowScroll = window.pageYOffset;
         for(let i = 0; i < colorSection_section.length ; i++){
-            let colorStart= colorSection_section[i].offsetTop - window.innerHeight/;
+            let colorStart= colorSection_section[i].offsetTop - window.innerHeight/3;
             let colorEnd = colorSection_section[i].scrollHeight + colorSection_section[i].offsetTop;
             let color = colorSection_section[i].dataset.color;
 

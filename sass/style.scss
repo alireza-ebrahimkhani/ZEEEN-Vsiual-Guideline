@@ -348,6 +348,7 @@
     }
 }
 .colorBox{
+    position: relative;
     &_info{
         padding: 2rem;
     }
@@ -360,6 +361,19 @@
         opacity: 1;
         transition: $motion;
     }
+     &_black>p , &_black>span {
+         color:black;
+     }
+     &--zeeen >div {
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+     }
+     &--zeeen{
+        
+    border-radius: 0 0 50% 50%;
+     }
 }
 .compare{
     margin-bottom: 2rem;
