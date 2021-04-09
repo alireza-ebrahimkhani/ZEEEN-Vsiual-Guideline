@@ -59,13 +59,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 }else{
                     continue;
                 }
-            
-            /*if (nowScroll > colorStart && nowScroll < colorEnd){
-                console.log("hi")
-                body__body.classList.add(color);
-            }if(nowScroll > colorEnd || nowScroll < colorStart){
-                body__body.classList.remove(color);
-            }*/
         }
     });
 });
