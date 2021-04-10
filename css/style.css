@@ -16,6 +16,7 @@ body {
   font-size: 8px;
   -webkit-transition: 0.7s all ease;
   transition: 0.7s all ease;
+  color: white;
 }
 
 .turnBlack {
@@ -447,8 +448,8 @@ h3::before, .h3::before, h4::before, .h4::before, h5::before, .h5::before, h6::b
 h1, .h1 {
   font-weight: 400;
   font-size: 12rem;
-  color: white;
   margin-bottom: 3rem;
+  word-break: break-word;
   text-transform: uppercase;
 }
 
@@ -456,14 +457,12 @@ h1, .h1 {
   h1, .h1 {
     font-weight: 400;
     font-size: 6.5rem;
-    color: white;
   }
 }
 
 h2, .h2 {
   font-weight: 400;
   font-size: 7.5rem;
-  color: white;
   margin-bottom: 1rem;
 }
 
@@ -471,14 +470,12 @@ h2, .h2 {
   h2, .h2 {
     font-weight: 300;
     font-size: 5rem;
-    color: white;
   }
 }
 
 h3, .h3 {
   font-weight: 300;
   font-size: 5.25rem;
-  color: white;
   margin-bottom: 1rem;
 }
 
@@ -486,14 +483,12 @@ h3, .h3 {
   h3, .h3 {
     font-weight: 400;
     font-size: 4.5rem;
-    color: white;
   }
 }
 
 h4, .h4 {
   font-weight: 500;
   font-size: 4rem;
-  color: white;
   padding-bottom: 1rem;
 }
 
@@ -501,62 +496,62 @@ h4, .h4 {
   h4, .h4 {
     font-weight: 400;
     font-size: 3.5rem;
-    color: white;
   }
 }
 
 h5, .h5 {
   font-weight: 500;
   font-size: 2.75rem;
-  color: white;
 }
 
 h6, .h6 {
   font-weight: bold;
   font-size: 2rem;
-  color: white;
 }
 
 .subtitlei {
   font-weight: 300;
   font-size: 2rem;
-  color: white;
   font-family: "Approach";
 }
 
 .subtitleii {
   font-weight: 300;
   font-size: 1.75rem;
-  color: white;
   font-family: "Approach";
 }
 
 .bodyi {
   font-weight: 200;
   font-size: 2rem;
-  color: white;
   font-family: "Approach";
 }
 
 .bodyii {
   font-weight: 200;
   font-size: 1.75rem;
-  color: white;
   font-family: "Approach";
 }
 
 .button {
   font-weight: 300;
   font-size: 2rem;
-  color: white;
   font-family: "Approach";
   text-transform: uppercase;
+  color: #082B96 !important;
+  padding: 2rem 2rem;
+  display: inline-block;
+  margin: 2rem 0;
+  background-color: white;
+}
+
+.button:hover {
+  background-color: #3491F4;
 }
 
 .caption {
   font-weight: 200;
   font-size: 1.5rem;
-  color: white;
   margin-top: 1rem;
   font-family: "Approach";
 }
@@ -564,7 +559,6 @@ h6, .h6 {
 .overline {
   font-weight: 200;
   font-size: 1.25rem;
-  color: white;
   font-family: "Approach";
   letter-spacing: 1.5px;
 }
@@ -572,14 +566,7 @@ h6, .h6 {
 a {
   font-weight: 200;
   font-size: 2rem;
-  color: white;
   font-family: "Approach";
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
-}
-
-a:hover {
-  color: #767f7f;
   -webkit-transition: 0.7s all ease;
   transition: 0.7s all ease;
 }
@@ -587,81 +574,68 @@ a:hover {
 .h1--fa {
   font-weight: 300;
   font-size: 12rem;
-  color: white;
 }
 
 .h2--fa {
   font-weight: 300;
   font-size: 7.5rem;
-  color: white;
 }
 
 .h3--fa {
   font-weight: 400;
   font-size: 5.25rem;
-  color: white;
 }
 
 .h4--fa {
   font-weight: 300;
   font-size: 4rem;
-  color: white;
 }
 
 .h5--fa {
   font-weight: 400;
   font-size: 2.75rem;
-  color: white;
 }
 
 .h6--fa {
   font-weight: 400;
   font-size: 2rem;
-  color: white;
 }
 
 .subtitlei--fa {
   font-weight: 400;
   font-size: 2rem;
-  color: white;
 }
 
 .subtitleii--fa {
   font-weight: 300;
   font-size: 1.75rem;
-  color: white;
 }
 
 .bodyi--fa {
   font-weight: 400;
   font-size: 2rem;
-  color: white;
 }
 
 .bodyii--fa {
   font-weight: 400;
   font-size: 1.75rem;
-  color: white;
   line-height: 21px;
 }
 
 .button--fa {
   font-weight: 400;
   font-size: 2rem;
-  color: white;
   line-height: 19px;
 }
 
 .caption--fa {
   font-weight: 400;
   font-size: 1.5rem;
-  color: white;
 }
 
 .overline--fa {
   font-weight: 300;
   font-size: 1.25rem;
-  color: white;
 }
 
 .do {

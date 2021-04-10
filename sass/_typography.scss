@@ -233,15 +233,14 @@ $enFont--arvo:'Arvo', serif;
     }
 }
 @mixin type ($weight, $size){
-    
     font-weight: $weight;
     font-size: $size;
-    color:$w;
 }
 h1 , .h1{
     @include type(400, 12rem);
     @extend %enType--arvo;
     margin-bottom: 3rem;
+    word-break: break-word;
     text-transform: uppercase;
     @include mobile{
         @include type(400, 6.5rem);
@@ -299,6 +298,14 @@ h6 , .h6{
     @include type(300, 2rem);
     font-family: $enFont--approach;
     text-transform: uppercase;
+    color: $blue7 !important;
+    padding: 2rem 2rem;
+    display: inline-block;
+    margin: 2rem 0;
+    background-color: white;
+    &:hover{
+        background-color: $blue5;
+    }
 }
 .caption{
     @include type(200, 1.5rem);
@@ -314,10 +321,6 @@ a{
     @include type(200, 2rem);
     font-family: $enFont--approach;
     transition: $motion;
-    &:hover{
-        color: $d1;
-        transition: $motion;
-    }
 }
 .h1--fa{
     @include type(300, 12rem);
