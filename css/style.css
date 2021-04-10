@@ -964,7 +964,7 @@ a.toc-link:hover {
 }
 
 .imgComparison__resizableFrame {
-  width: 50%;
+  width: 0%;
   height: 100%;
   position: absolute;
   display: inline-block;
