@@ -275,7 +275,7 @@ h5 , .h5{
     @extend %enType;
 }
 h6 , .h6{
-    @include type(bold, 2rem);
+    @include type(600, 2rem);
     @extend %enType;
 }
 .subtitlei{

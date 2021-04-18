@@ -51,14 +51,13 @@
   appearance: none;
   width: 16px; 
   height: 16px; 
-  border: 1px solid $w;
-  background: $blue7; 
+  background: $w; 
   border-radius: 50%;
   cursor: pointer; 
   transition: .3s all ease;
 }
 .imgComparison__silder::-webkit-slider-thumb:hover {
-  background: $w; 
+  background: $blue5; 
   transition: .3s all ease;
 }
 .imgComparison__silder::-moz-range-thumb {
@@ -66,7 +65,7 @@
   appearance: none;
   width: 16px; 
   height: 8px; 
-  border: 1px solid $w;
+  border: 1px solid $blue5;
   background: $w; 
   cursor: pointer; 
 }

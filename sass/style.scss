@@ -385,7 +385,10 @@
         margin-bottom: .5rem;
     }
     &__subTitle p:nth-child(1){
-        color: $p;
+        color: $blue5;
+    }
+    &__subTitle p:nth-child(2){
+        color: $s1;
     }
     &__subTitle p:nth-child(2){
         position: absolute;
@@ -397,13 +400,13 @@
     }
     &__left{
         height: 1rem;
-        background-color: $p;
+        background-color: $blue5;
         position: absolute;
     }
     &__right{
         height: 1rem;
         width: 100%;
-        background-color: $w;
+        background-color: $s1;
     }
 }
 .smallest{

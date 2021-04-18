@@ -505,7 +505,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2rem;
 }
 
@@ -998,8 +998,7 @@ a.toc-link:hover {
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 1px solid white;
-  background: #082B96;
+  background: white;
   border-radius: 50%;
   cursor: pointer;
   -webkit-transition: .3s all ease;
@@ -1007,7 +1006,7 @@ a.toc-link:hover {
 }
 
 .imgComparison__silder::-webkit-slider-thumb:hover {
-  background: white;
+  background: #3491F4;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
 }
@@ -1018,7 +1017,7 @@ a.toc-link:hover {
        appearance: none;
   width: 16px;
   height: 8px;
-  border: 1px solid white;
+  border: 1px solid #3491F4;
   background: white;
   cursor: pointer;
 }
@@ -1607,7 +1606,11 @@ a.toc-link:hover {
 }
 
 .compare__subTitle p:nth-child(1) {
-  color: #082b96;
+  color: #3491F4;
+}
+
+.compare__subTitle p:nth-child(2) {
+  color: #404545;
 }
 
 .compare__subTitle p:nth-child(2) {
@@ -1622,14 +1625,14 @@ a.toc-link:hover {
 
 .compare__left {
   height: 1rem;
-  background-color: #082b96;
+  background-color: #3491F4;
   position: absolute;
 }
 
 .compare__right {
   height: 1rem;
   width: 100%;
-  background-color: white;
+  background-color: #404545;
 }
 
 .smallest {
