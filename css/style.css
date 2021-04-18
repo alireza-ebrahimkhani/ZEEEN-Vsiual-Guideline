@@ -67,12 +67,10 @@ body {
 }
 
 .br--dont {
-  border: 1px solid #afb6b6;
   border-bottom: 8px solid  #d73400;
 }
 
 .br--do {
-  border: 1px solid #afb6b6;
   border-bottom: 8px solid #26c260;
 }
 
