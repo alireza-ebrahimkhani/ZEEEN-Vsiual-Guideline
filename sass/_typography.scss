@@ -257,7 +257,7 @@ h2 , .h2{
 h3 , .h3{
     @include type(300, 5.25rem);
     @extend %enType;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     @include mobile{
         @include type(400, 4.5rem);
     }
