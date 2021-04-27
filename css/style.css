@@ -1645,4 +1645,49 @@ a.toc-link:hover {
           transform: translate(-50%, -50%);
   z-index: 1  !important;
 }
+
+.lottie_hover {
+  position: relative;
+}
+
+.lottie_hover:before {
+  content: '';
+  -webkit-clip-path: polygon(20% 0, 20% 100%, 100% 50%);
+          clip-path: polygon(20% 0, 20% 100%, 100% 50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.lottie_hover:after {
+  content: '';
+  width: 100%;
+  height: calc(100% - 2px);
+  background-color: #082B96;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+
+.lottie_hover:hover:before {
+  opacity: 0;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+
+.lottie_hover:hover:after {
+  opacity: 0;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
 /*# sourceMappingURL=style.css.map */

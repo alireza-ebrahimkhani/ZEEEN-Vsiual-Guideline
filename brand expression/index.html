@@ -6,8 +6,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../asset/platform/fav.png" type="image/gif" sizes="16x16" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.5/lottie.min.js"
-    integrity="sha256-tVpznqqKrEwxQ4kPHZW4HR+i/MRmuGHEozkBXm1DMSs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" type="text/javascript"></script>
+
   <link rel="stylesheet" href="../css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
   <script src="../js/js.js" type="text/javascript"></script>
@@ -211,61 +211,85 @@
           <section>
             <h3 id="framing_saddle">The Saddle in Square artboards</h3>
             <div class="wr wr--full">
-              <div class="col6">
-                <div id="framing_saddle_main_margin" class="lottie">
+              <div class="col4">
+                <div id="framing--saddle_main_margin" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_saddle_main_margin");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/saddle_main_margin.json",
+                  var anim_saddle_main_margin = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--saddle_main_margin'), // Required
+                    path: 'asset/framing/saddle_main_margin.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--saddle_main_margin').addEventListener('mouseover', function () {
+                    anim_saddle_main_margin.play();
+                  });
+                  document.getElementById('framing--saddle_main_margin').addEventListener('mouseout', function () {
+                    anim_saddle_main_margin.pause();
                   });
                 </script>
                 <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_saddle_saddle_form" class="lottie">
+              <div class="col4">
+                <div id="framing--saddle_form" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_saddle_saddle_form");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/saddle_form.json",
+                  var anim_saddle_form = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--saddle_form'), // Required
+                    path: 'asset/framing/saddle_form.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--saddle_form').addEventListener('mouseover', function () {
+                    anim_saddle_form.play();
+                  });
+                  document.getElementById('framing--saddle_form').addEventListener('mouseout', function () {
+                    anim_saddle_form.pause();
                   });
                 </script>
                 <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_saddle_safe_zone" class="lottie">
+              <div class="col4">
+                <div id="framing--saddle_safe_zone" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_saddle_safe_zone");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/saddle_safe_zone.json",
+                  var anim_saddle_safe_zone = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--saddle_safe_zone'), // Required
+                    path: 'asset/framing/saddle_safe_zone.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--saddle_safe_zone').addEventListener('mouseover', function () {
+                    anim_saddle_safe_zone.play();
+                  });
+                  document.getElementById('framing--saddle_safe_zone').addEventListener('mouseout', function () {
+                    anim_saddle_safe_zone.pause();
                   });
                 </script>
                 <p class="bodyi">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_saddle_typography" class="lottie">
+              <div class="col4">
+                <div id="framing--saddle_typography" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_saddle_typography");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/saddle_typography.json",
+                  var anim_saddle_typography = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--saddle_typography'), // Required
+                    path: 'asset/framing/saddle_typography.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--saddle_typography').addEventListener('mouseover', function () {
+                    anim_saddle_typography.play();
+                  });
+                  document.getElementById('framing--saddle_typography').addEventListener('mouseout', function () {
+                    anim_saddle_typography.pause();
                   });
                 </script>
                 <p class="caption">caption</p>
@@ -307,46 +331,64 @@
           <section>
             <h3 id="framing_saddle">The persian gate in square artboards</h3>
             <div class="wr wr--full">
-              <div class="col6">
-                <div id="framing_gate_main_margin" class="lottie">
+              <div class="col4">
+                <div id="framing--gate_main_margin" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_gate_main_margin");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/gate_main_margin.json",
+                  var anim_gate_main_margin = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--gate_main_margin'), // Required
+                    path: 'asset/framing/gate_main_margin.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--gate_main_margin').addEventListener('mouseover', function () {
+                    anim_gate_main_margin.play();
+                  });
+                  document.getElementById('framing--gate_main_margin').addEventListener('mouseout', function () {
+                    anim_gate_main_margin.pause();
                   });
                 </script>
                 <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_gate_form" class="lottie">
+              <div class="col4">
+                <div id="framing--gate_form" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_gate_form");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/gate_form.json",
+                  var anim_gate_form = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--gate_form'), // Required
+                    path: 'asset/framing/gate_form.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--gate_form').addEventListener('mouseover', function () {
+                    anim_gate_form.play();
+                  });
+                  document.getElementById('framing--gate_form').addEventListener('mouseout', function () {
+                    anim_gate_form.pause();
                   });
                 </script>
                 <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_gate_typography" class="lottie">
+              <div class="col4">
+                <div id="framing--gate_typography" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_gate_typography");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/gate_typography.json",
+                  var anim_gate_typography = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--gate_typography'), // Required
+                    path: 'asset/framing/gate_typography.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--gate_typography').addEventListener('mouseover', function () {
+                    anim_gate_typography.play();
+                  });
+                  document.getElementById('framing--gate_typography').addEventListener('mouseout', function () {
+                    anim_gate_typography.pause();
                   });
                 </script>
                 <p class="bodyi">caption</p>
@@ -358,60 +400,84 @@
             <h3 id="framing_saddle">The persian gate in portrait artboards</h3>
             <div class="wr wr--full">
               <div class="col4">
-                <div id="framing_gate_portrait_main_margin" class="lottie">
+                <div id="framing--gate_portrait_main_margin" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_gate_portrait_main_margin");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/gate_portrait_main_margin.json",
+                  var anim_gate_portrait_main_margin = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--gate_portrait_main_margin'), // Required
+                    path: 'asset/framing/gate_portrait_main_margin.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--gate_portrait_main_margin').addEventListener('mouseover', function () {
+                    anim_gate_portrait_main_margin.play();
+                  });
+                  document.getElementById('framing--gate_portrait_main_margin').addEventListener('mouseout', function () {
+                    anim_gate_portrait_main_margin.pause();
                   });
                 </script>
                 <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
               <div class="col4">
-                <div id="framing_gate_portrait" class="lottie">
+                <div id="framing--gate_portrait" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_gate_portrait");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/gate_portrait.json",
+                  var anim_gate_portrait = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--gate_portrait'), // Required
+                    path: 'asset/framing/gate_portrait.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--gate_portrait').addEventListener('mouseover', function () {
+                    anim_gate_portrait.play();
+                  });
+                  document.getElementById('framing--gate_portrait').addEventListener('mouseout', function () {
+                    anim_gate_portrait.pause();
                   });
                 </script>
                 <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
               <div class="col4">
-                <div id="framing_gate_portrait_bond" class="lottie">
+                <div id="framing--gate_portrait_bond" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_gate_portrait_bond");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/gate_portrait_bond.json",
+                  var anim_gate_portrait_bond = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--gate_portrait_bond'), // Required
+                    path: 'asset/framing/gate_portrait_bond.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--gate_portrait_bond').addEventListener('mouseover', function () {
+                    anim_gate_portrait_bond.play();
+                  });
+                  document.getElementById('framing--gate_portrait_bond').addEventListener('mouseout', function () {
+                    anim_gate_portrait_bond.pause();
                   });
                 </script>
                 <p class="bodyi">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
               <div class="col4">
-                <div id="framing_gate_portrait_layout" class="lottie">
+                <div id="framing--gate_portrait_layout" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_gate_portrait_layout");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/gate_portrait_layout.json",
+                  var anim_gate_portrait_layout = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--gate_portrait_layout'), // Required
+                    path: 'asset/framing/gate_portrait_layout.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--gate_portrait_layout').addEventListener('mouseover', function () {
+                    anim_gate_portrait_layout.play();
+                  });
+                  document.getElementById('framing--gate_portrait_layout').addEventListener('mouseout', function () {
+                    anim_gate_portrait_layout.pause();
                   });
                 </script>
                 <p class="bodyi">caption</p>
@@ -422,94 +488,130 @@
           <section>
             <h3 id="framing_saddle">Shahname frames in square artboards</h3>
             <div class="wr wr--full">
-              <div class="col6">
-                <div id="framing_shahname_main_margin" class="lottie">
+              <div class="col4">
+                <div id="framing--shahname_main_margin" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_main_margin");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/gate_main_margin.json",
+                  var anim_shahname_main_margin = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_main_margin'), // Required
+                    path: 'asset/framing/gate_main_margin.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_main_margin').addEventListener('mouseover', function () {
+                    anim_shahname_main_margin.play();
+                  });
+                  document.getElementById('framing--shahname_main_margin').addEventListener('mouseout', function () {
+                    anim_shahname_main_margin.pause();
                   });
                 </script>
                 <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_shahname_form" class="lottie">
+              <div class="col4">
+                <div id="framing--shahname_form" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_form");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/shahname_form.json",
+                  var anim_shahname_form = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_form'), // Required
+                    path: 'asset/framing/shahname_form.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_form').addEventListener('mouseover', function () {
+                    anim_shahname_form.play();
+                  });
+                  document.getElementById('framing--shahname_form').addEventListener('mouseout', function () {
+                    anim_shahname_form.pause();
                   });
                 </script>
                 <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_shahname_rotation" class="lottie">
+              <div class="col4">
+                <div id="framing--shahname_rotation" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_rotation");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/shahname_rotation.json",
+                  var anim_shahname_rotation = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_rotation'), // Required
+                    path: 'asset/framing/shahname_rotation.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_rotation').addEventListener('mouseover', function () {
+                    anim_shahname_rotation.play();
+                  });
+                  document.getElementById('framing--shahname_rotation').addEventListener('mouseout', function () {
+                    anim_shahname_rotation.pause();
                   });
                 </script>
-                <p class="bodyi">caption</p>
+                <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_shahname_bond" class="lottie">
+              <div class="col4">
+                <div id="framing--shahname_bond" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_bond");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/shahname_bond.json",
+                  var anim_shahname_bond = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_bond'), // Required
+                    path: 'asset/framing/shahname_bond.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_bond').addEventListener('mouseover', function () {
+                    anim_shahname_bond.play();
+                  });
+                  document.getElementById('framing--shahname_bond').addEventListener('mouseout', function () {
+                    anim_shahname_bond.pause();
                   });
                 </script>
-                <p class="bodyi">caption</p>
+                <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_shahname_dynamism" class="lottie">
+              <div class="col4">
+                <div id="framing--shahname_dynamism" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_dynamism");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/shahname_dynamism.json",
+                  var anim_shahname_dynamism = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_dynamism'), // Required
+                    path: 'asset/framing/shahname_dynamism.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_dynamism').addEventListener('mouseover', function () {
+                    anim_shahname_dynamism.play();
+                  });
+                  document.getElementById('framing--shahname_dynamism').addEventListener('mouseout', function () {
+                    anim_shahname_dynamism.pause();
                   });
                 </script>
-                <p class="bodyi">caption</p>
+                <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
-              <div class="col6">
-                <div id="framing_shahname_layout" class="lottie">
+              <div class="col4">
+                <div id="framing--shahname_layout" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_layout");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/shahname_layout.json",
+                  var anim_shahname_layout = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_layout'), // Required
+                    path: 'asset/framing/shahname_layout.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_layout').addEventListener('mouseover', function () {
+                    anim_shahname_layout.play();
+                  });
+                  document.getElementById('framing--shahname_layout').addEventListener('mouseout', function () {
+                    anim_shahname_layout.pause();
                   });
                 </script>
-                <p class="bodyi">caption</p>
+                <p class="caption">caption</p>
                 <p class="caption--fa fa">کپشن</p>
               </div>
             </div>
@@ -531,28 +633,40 @@
                   consequatur fugiat dignissimos ipsa perspiciatis laboriosam omnis tenetur at. </p>
               </div>
               <div class="col6">
-                <div id="framing_shahname_landscape" class="lottie">
+                <div id="framing--shahname_landscape" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_landscape");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/shahname_landscape.json",
+                  var anim_shahname_landscape = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_landscape'), // Required
+                    path: 'asset/framing/shahname_landscape.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_landscape').addEventListener('mouseover', function () {
+                    anim_shahname_landscape.play();
+                  });
+                  document.getElementById('framing--shahname_landscape').addEventListener('mouseout', function () {
+                    anim_shahname_landscape.pause();
                   });
                 </script>
               </div>
               <div class="col6">
-                <div id="framing_shahname_lanscape_layout" class="lottie">
+                <div id="framing--shahname_lanscape_layout" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_lanscape_layout");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/shahname_lanscape_layout.json",
+                  var anim_shahname_lanscape_layout = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_lanscape_layout'), // Required
+                    path: 'asset/framing/shahname_lanscape_layout.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_lanscape_layout').addEventListener('mouseover', function () {
+                    anim_shahname_lanscape_layout.play();
+                  });
+                  document.getElementById('framing--shahname_lanscape_layout').addEventListener('mouseout', function () {
+                    anim_shahname_lanscape_layout.pause();
                   });
                 </script>
               </div>
@@ -575,28 +689,40 @@
                   consequatur fugiat dignissimos ipsa perspiciatis laboriosam omnis tenetur at. </p>
               </div>
               <div class="col4">
-                <div id="framing_shahname_portrait" class="lottie">
+                <div id="framing--shahname_portrait" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_portrait");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/shahname_portrait.json",
+                  var anim_shahname_portrait = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_portrait'), // Required
+                    path: 'asset/framing/shahname_portrait.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_portrait').addEventListener('mouseover', function () {
+                    anim_shahname_portrait.play();
+                  });
+                  document.getElementById('framing--shahname_portrait').addEventListener('mouseout', function () {
+                    anim_shahname_portrait.pause();
                   });
                 </script>
               </div>
               <div class="col4">
-                <div id="framing_shahname_portrait-layout" class="lottie">
+                <div id="framing--shahname_portrait_layout" class="lottie lottie_hover">
                 </div>
                 <script>
-                  var svgContainer = document.getElementById("framing_shahname_portrait-layout");
-                  var animItem = bodymovin.loadAnimation({
-                    wrapper: svgContainer,
-                    animType: "svg",
-                    loop: true,
-                    path: "asset/framing/shahname_portrait-layout.json",
+                  var anim_shahname_portrait_layout = bodymovin.loadAnimation({
+                    container: document.getElementById('framing--shahname_portrait_layout'), // Required
+                    path: 'asset/framing/shahname_portrait_layout.json', // Required
+                    renderer: 'svg', // Required
+                    loop: true, // Optional
+                    autoplay: false, // Optional
+                  })
+                  document.getElementById('framing--shahname_portrait_layout').addEventListener('mouseover', function () {
+                    anim_shahname_portrait_layout.play();
+                  });
+                  document.getElementById('framing--shahname_portrait_layout').addEventListener('mouseout', function () {
+                    anim_shahname_portrait_layout.pause();
                   });
                 </script>
               </div>
