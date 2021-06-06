@@ -454,3 +454,17 @@
         transition: $motion;
     }
 }
+.hoverImg{
+    & > .hoverImg_hide{
+        opacity: 1;
+    transition: $motion;
+    }
+    &:hover > .hoverImg_hide{
+        opacity: 0;
+    transition: $motion;
+    }
+    & .hoverImg_reveal{
+        z-index: -4;
+    }
+} 
+    

@@ -14,21 +14,21 @@ html {
 body {
   background-color: #082B96;
   font-size: 8px;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   color: white;
 }
 
 .turnBlack {
   background-color: black;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .turnBlue {
   background-color: #082B96;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 ::-webkit-scrollbar {
@@ -413,7 +413,7 @@ h1::before, .h1::before, h2::before, .h2::before {
   height: 13rem;
   display: block;
   content: " ";
-  margin-top: -10.5rem;
+  margin-top: -12rem;
   visibility: hidden;
 }
 
@@ -432,7 +432,7 @@ h3::before, .h3::before, h4::before, .h4::before, h5::before, .h5::before, h6::b
   height: 13rem;
   display: block;
   content: " ";
-  margin-top: -10.5rem;
+  margin-top: -12rem;
   visibility: hidden;
 }
 
@@ -485,7 +485,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-weight: 500;
+  font-weight: 100;
   font-size: 4rem;
   padding-bottom: 1rem;
 }
@@ -498,12 +498,13 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 2.75rem;
+  margin-bottom: 2rem;
 }
 
 h6, .h6 {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 2rem;
 }
 
@@ -565,8 +566,8 @@ a {
   font-weight: 200;
   font-size: 2rem;
   font-family: "Approach";
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .h1--fa {
@@ -891,27 +892,27 @@ a.toc-link {
   font-size: 2rem;
   margin-bottom: 1rem;
   display: block;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 a.toc-link:hover {
   color: black;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .is-collapsible {
   max-height: 1000px;
   overflow: hidden;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .is-collapsed {
   max-height: 0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .is-position-fixed {
@@ -937,6 +938,7 @@ a.toc-link:hover {
 
 .node-name--H1 {
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 .node-name--H2 {
@@ -1049,14 +1051,14 @@ a.toc-link:hover {
   cursor: pointer;
   padding: 16px;
   border-top: 1px solid #cdd0d0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .accordion__header:hover {
   background-color: #cdd0d0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .accordion__item:first-child > .accordion__header {
@@ -1068,16 +1070,16 @@ a.toc-link:hover {
   padding: 0 16px;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .accordion__body--active {
   max-height: unset;
   opacity: 1;
   padding: 16px 16px;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .accordion__body--deactive {
@@ -1085,8 +1087,8 @@ a.toc-link:hover {
   padding: 0 16px;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .accordion__info {
@@ -1160,8 +1162,8 @@ a.toc-link:hover {
   left: 68px;
   position: absolute;
   display: inline-block;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1175,8 +1177,8 @@ a.toc-link:hover {
 .header__logoSvgDynamic--inline {
   top: 0;
   left: 68px;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__description {
@@ -1190,20 +1192,20 @@ a.toc-link:hover {
   .header__description {
     display: block;
     opacity: 1;
-    -webkit-transition: 0.7s all ease;
-    transition: 0.7s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
   }
 }
 
 .header__description--hidden {
   opacity: 0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__items {
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1211,8 +1213,8 @@ a.toc-link:hover {
     max-height: 0;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: 0.7s all ease;
-    transition: 0.7s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
   }
 }
 
@@ -1220,19 +1222,19 @@ a.toc-link:hover {
   visibility: visible;
   opacity: 1;
   max-height: 100vh;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__items a {
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__items a:hover {
   color: black;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__item {
@@ -1280,8 +1282,8 @@ a.toc-link:hover {
   float: right;
   margin-left: 8px;
   cursor: pointer;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__transLine {
@@ -1290,8 +1292,8 @@ a.toc-link:hover {
   height: 2px;
   width: 24px;
   background-color: #8A9608;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__transLine--active {
@@ -1306,13 +1308,13 @@ a.toc-link:hover {
   border-radius: 50%;
   background-color: #8A9608;
   margin: 2px 2px 0px 14px;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__transPin--active {
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   background-color: #082b96;
   margin: 2px 14px 2px 0px;
 }
@@ -1328,13 +1330,13 @@ a.toc-link:hover {
   margin: 3.25rem;
   z-index: 1000;
   cursor: pointer;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__hamico--hidden {
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   top: -7.5rem;
 }
 
@@ -1359,8 +1361,8 @@ a.toc-link:hover {
   position: absolute;
   top: 11px;
   left: 0px;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__hamline:before {
@@ -1371,8 +1373,8 @@ a.toc-link:hover {
   position: absolute;
   top: -12px;
   left: 0px;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__hamline:after {
@@ -1383,19 +1385,19 @@ a.toc-link:hover {
   position: absolute;
   top: 12px;
   left: 0px;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .header__hamline--open {
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   background-color: transparent;
 }
 
 .header__hamline--open:after {
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   content: '';
   -webkit-transform: rotate(-45deg) translate(7px, -10px);
           transform: rotate(-45deg) translate(7px, -10px);
@@ -1403,8 +1405,8 @@ a.toc-link:hover {
 }
 
 .header__hamline--open:before {
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   content: '';
   -webkit-transform: rotate(45deg) translate(7px, 10px);
           transform: rotate(45deg) translate(7px, 10px);
@@ -1452,8 +1454,8 @@ a.toc-link:hover {
   top: 15rem;
   height: calc(100vh - 10.5rem);
   width: calc(((((100% - 24rem) - 33rem) / 12) * 3) + 6rem);
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1482,14 +1484,14 @@ a.toc-link:hover {
 }
 
 .main__nav--open {
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   left: 0px;
 }
 
 .main__nav--up {
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   top: 3rem;
   height: calc(100vh - 3rem);
 }
@@ -1565,14 +1567,14 @@ a.toc-link:hover {
 .colorBox_info--fade {
   padding: 2rem;
   opacity: 0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .colorBox_info--fade:hover {
   opacity: 1;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .colorBox_black > p, .colorBox_black > span {
@@ -1675,19 +1677,35 @@ a.toc-link:hover {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .lottie_hover:hover:before {
   opacity: 0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .lottie_hover:hover:after {
   opacity: 0;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.hoverImg > .hoverImg_hide {
+  opacity: 1;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.hoverImg:hover > .hoverImg_hide {
+  opacity: 0;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.hoverImg .hoverImg_reveal {
+  z-index: -4;
 }
 /*# sourceMappingURL=style.css.map */
