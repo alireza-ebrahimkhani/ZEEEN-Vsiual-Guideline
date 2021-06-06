@@ -1,6 +1,16 @@
 @import 'color';
 @import 'grid';
-$yekanPath: "../asset/font/fa/yekanBakh";
+@font-face {
+    font-family: 'IRRoya';
+    src: url('../asset/platform/fonts/IRRoya.eot');
+    src: local('IRRoya'), local('IRRoya'),
+        url('../asset/platform/fonts/IRRoya.eot?#iefix') format('embedded-opentype'),
+        url('../asset/platform/fonts/IRRoya.woff2') format('woff2'),
+        url('../asset/platform/fonts/IRRoya.woff') format('woff'),
+        url('../asset/platform/fonts/IRRoya.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
 @font-face {
     font-family: 'Approach';
     src: url('../asset/platform/fonts/Approach-LightItalic.eot');
@@ -195,7 +205,7 @@ $yekanPath: "../asset/font/fa/yekanBakh";
         opacity: 1;
     }
 }
-$faFont: yekanbakh;
+$faFont: 'IRRoya';
 $enFont--approach: 'Approach';
 $enFont--arvo:'Arvo', serif;
 %faType{
@@ -299,6 +309,7 @@ h6 , .h6{
 }
 .bodyi{
     @include type(200, 2rem);
+    
     font-family: $enFont--approach;
 }
 .bodyii{
@@ -319,9 +330,13 @@ h6 , .h6{
     }
 }
 .caption{
-    @include type(200, 1.5rem);
+    @include type(200, 1.75rem);
     margin-top:1rem;
-    font-family: $enFont--approach;;
+    font-family: $enFont--approach;
+    display: inline-block;
+    width: calc(50% - 1.5rem);
+    margin-right: 3rem;
+    float:left;
 }
 .overline{
     @include type(200, 1.25rem);
@@ -368,6 +383,7 @@ a{
 .bodyi--fa{
     @include type(400, 2rem);
     @extend %faType;
+    line-height: 22px;
 }
 .bodyii--fa{
     @include type(400, 1.75rem);
@@ -380,8 +396,13 @@ a{
     line-height: 19px;
 }
 .caption--fa{
-    @include type(400, 1.5rem);
+    @include type(400, 1.75rem);
     @extend %faType;
+    margin-top: 1rem;
+    display: inline-block;
+    width: calc(50% - 1.5rem);
+
+    line-height: 19px;
 }
 .overline--fa{
     @include type(300, 1.25rem);

@@ -262,6 +262,14 @@ section {
 }
 
 @font-face {
+  font-family: 'IRRoya';
+  src: url("../asset/platform/fonts/IRRoya.eot");
+  src: local("IRRoya"), local("IRRoya"), url("../asset/platform/fonts/IRRoya.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/IRRoya.woff2") format("woff2"), url("../asset/platform/fonts/IRRoya.woff") format("woff"), url("../asset/platform/fonts/IRRoya.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-LightItalic.eot");
   src: local("Approach Light Italic"), local("Approach-LightItalic"), url("../asset/platform/fonts/Approach-LightItalic.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-LightItalic.woff2") format("woff2"), url("../asset/platform/fonts/Approach-LightItalic.woff") format("woff"), url("../asset/platform/fonts/Approach-LightItalic.ttf") format("truetype");
@@ -400,7 +408,7 @@ section {
 }
 
 .h1--fa, .h2--fa, .h3--fa, .h4--fa, .h5--fa, .h6--fa, .subtitlei--fa, .subtitleii--fa, .bodyi--fa, .bodyii--fa, .button--fa, .caption--fa, .overline--fa {
-  font-family: yekanbakh;
+  font-family: "IRRoya";
   text-align: right;
   direction: rtl;
 }
@@ -554,9 +562,13 @@ h6, .h6 {
 
 .caption {
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-top: 1rem;
   font-family: "Approach";
+  display: inline-block;
+  width: calc(50% - 1.5rem);
+  margin-right: 3rem;
+  float: left;
 }
 
 .overline {
@@ -617,6 +629,7 @@ a {
 .bodyi--fa {
   font-weight: 400;
   font-size: 2rem;
+  line-height: 22px;
 }
 
 .bodyii--fa {
@@ -633,7 +646,11 @@ a {
 
 .caption--fa {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  margin-top: 1rem;
+  display: inline-block;
+  width: calc(50% - 1.5rem);
+  line-height: 19px;
 }
 
 .overline--fa {
