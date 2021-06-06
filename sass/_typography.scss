@@ -247,17 +247,20 @@ h1 , .h1{
     }
 }
 h2 , .h2{
-    @include type(400, 7.5rem);
-    @extend %enType--arvo;
+    @include type(200, 7.5rem);
+    @extend %enType;
     margin-bottom: 1rem;
+    text-transform: uppercase;
     @include mobile{
         @include type(300, 5rem);
     }
 }
+
 h3 , .h3{
     @include type(300, 5.25rem);
     @extend %enType;
-    margin-bottom: 3rem;
+
+    text-transform: capitalize;
     @include mobile{
         @include type(400, 4.5rem);
     }
@@ -265,6 +268,8 @@ h3 , .h3{
 h4 , .h4{
     @include type(100, 4rem);
     @extend %enType;
+
+    text-transform: capitalize;
     @include mobile{
         @include type(400, 3.5rem);
     }
@@ -273,11 +278,15 @@ h4 , .h4{
 h5 , .h5{
     @include type(300, 2.75rem);
     @extend %enType;
+
+    text-transform: uppercase;
     margin-bottom: 2rem;
 }
 h6 , .h6{
     @include type(300, 2rem);
     @extend %enType;
+
+    text-transform: uppercase;
     
 }
 .subtitlei{
