@@ -418,10 +418,10 @@ h1, .h1 {
 }
 
 h1::before, .h1::before {
-  height: 13rem;
+  height: 16rem;
   display: block;
   content: " ";
-  margin-top: -12rem;
+  margin-top: -16rem;
   visibility: hidden;
 }
 
@@ -1728,5 +1728,40 @@ a.toc-link:hover {
 
 .hoverImg .hoverImg_reveal {
   z-index: -4;
+}
+
+.animImg {
+  height: 800px;
+  width: 100vw;
+  margin-left: -43.5rem;
+  position: relative;
+}
+
+.animImg_img {
+  -webkit-animation-name: animImg;
+          animation-name: animImg;
+  position: absolute;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes animImg {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes animImg {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

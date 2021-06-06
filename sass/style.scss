@@ -468,3 +468,20 @@
     }
 } 
     
+.animImg{
+    height: 800px;
+    width: 100vw;
+    margin-left: -43.5rem;
+    position: relative;
+    &_img{
+        animation-name: animImg;
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+@keyframes animImg {
+    from {left: -500px;}
+  to {left: 100%;}
+}
+

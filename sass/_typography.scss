@@ -217,10 +217,10 @@ $enFont--arvo:'Arvo', serif;
 %enType--arvo{
     font-family: $enFont--arvo;
     &::before{
-        height: 13rem;
+        height: 16rem;
         display: block;
         content: " ";
-        margin-top: -12rem;
+        margin-top: -16rem;
         visibility: hidden;
         @include mobile{
             height: 14rem;
