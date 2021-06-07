@@ -471,8 +471,15 @@
 .animImg{
     height: 800px;
     width: 100vw;
+    margin-top:6rem;
     margin-left: -43.5rem;
     position: relative;
+    @include tablet{
+        margin-left: -3rem;
+    }
+    @include mobile{
+        margin-left: -2rem;
+    }
     &_img{
         animation-name: animImg;
         position: absolute;

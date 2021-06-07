@@ -1733,8 +1733,21 @@ a.toc-link:hover {
 .animImg {
   height: 800px;
   width: 100vw;
+  margin-top: 6rem;
   margin-left: -43.5rem;
   position: relative;
+}
+
+@media only screen and (max-width: 1023px) {
+  .animImg {
+    margin-left: -3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .animImg {
+    margin-left: -2rem;
+  }
 }
 
 .animImg_img {
