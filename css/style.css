@@ -262,10 +262,50 @@ section {
 }
 
 @font-face {
-  font-family: 'IRRoya';
-  src: url("../asset/platform/fonts/IRRoya.eot");
-  src: local("IRRoya"), local("IRRoya"), url("../asset/platform/fonts/IRRoya.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/IRRoya.woff2") format("woff2"), url("../asset/platform/fonts/IRRoya.woff") format("woff"), url("../asset/platform/fonts/IRRoya.ttf") format("truetype");
+  font-family: 'Vazir';
+  src: url("../asset/platform/fonts/vazir/Vazir-Thin.eot");
+  src: local("Vazir-Thin"), local("Vazir-Thin"), url("../asset/platform/fonts/vazir/Vazir-Thin.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/vazir/Vazir-Thin.woff2") format("woff2"), url("../asset/platform/fonts/vazir/Vazir-Thin.woff") format("woff"), url("../asset/platform/fonts/vazir/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url("../asset/platform/fonts/vazir/Vazir-Light.eot");
+  src: local("Vazir-Light"), local("Vazir-Light"), url("../asset/platform/fonts/vazir/Vazir-Light.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/vazir/Vazir-Light.woff2") format("woff2"), url("../asset/platform/fonts/vazir/Vazir-Light.woff") format("woff"), url("../asset/platform/fonts/vazir/Vazir-Light.ttf") format("truetype");
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url("../asset/platform/fonts/vazir/Vazir-Regular.eot");
+  src: local("Vazir-Regular"), local("Vazir-Regular"), url("../asset/platform/fonts/vazir/Vazir-Regular.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/vazir/Vazir-Regular.woff2") format("woff2"), url("../asset/platform/fonts/vazir/Vazir-Regular.woff") format("woff"), url("../asset/platform/fonts/vazir/Vazir-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url("../asset/platform/fonts/vazir/Vazir-Medium.eot");
+  src: local("Vazir-Medium"), local("Vazir-Medium"), url("../asset/platform/fonts/vazir/Vazir-Medium.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/vazir/Vazir-Medium.woff2") format("woff2"), url("../asset/platform/fonts/vazir/Vazir-Medium.woff") format("woff"), url("../asset/platform/fonts/vazir/Vazir-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url("../asset/platform/fonts/vazir/Vazir-Bold.eot");
+  src: local("Vazir-Bold"), local("Vazir-Bold"), url("../asset/platform/fonts/vazir/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/vazir/Vazir-Bold.woff2") format("woff2"), url("../asset/platform/fonts/vazir/Vazir-Bold.woff") format("woff"), url("../asset/platform/fonts/vazir/Vazir-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url("../asset/platform/fonts/vazir/Vazir-Black.eot");
+  src: local("Vazir-Black"), local("Vazir-Black"), url("../asset/platform/fonts/vazir/Vazir-Black.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/vazir/Vazir-Black.woff2") format("woff2"), url("../asset/platform/fonts/vazir/Vazir-Black.woff") format("woff"), url("../asset/platform/fonts/vazir/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -273,7 +313,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-LightItalic.eot");
   src: local("Approach Light Italic"), local("Approach-LightItalic"), url("../asset/platform/fonts/Approach-LightItalic.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-LightItalic.woff2") format("woff2"), url("../asset/platform/fonts/Approach-LightItalic.woff") format("woff"), url("../asset/platform/fonts/Approach-LightItalic.ttf") format("truetype");
-  font-weight: 200;
+  font-weight: 100;
   font-style: italic;
 }
 
@@ -281,7 +321,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-Light.eot");
   src: local("Approach Light"), local("Approach-Light"), url("../asset/platform/fonts/Approach-Light.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-Light.woff2") format("woff2"), url("../asset/platform/fonts/Approach-Light.woff") format("woff"), url("../asset/platform/fonts/Approach-Light.ttf") format("truetype");
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -289,7 +329,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-RegularItalic.eot");
   src: local("Approach Regular Italic"), local("Approach-RegularItalic"), url("../asset/platform/fonts/Approach-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-RegularItalic.woff2") format("woff2"), url("../asset/platform/fonts/Approach-RegularItalic.woff") format("woff"), url("../asset/platform/fonts/Approach-RegularItalic.ttf") format("truetype");
-  font-weight: 300;
+  font-weight: normal;
   font-style: italic;
 }
 
@@ -297,7 +337,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-Regular.eot");
   src: local("Approach Regular"), local("Approach-Regular"), url("../asset/platform/fonts/Approach-Regular.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-Regular.woff2") format("woff2"), url("../asset/platform/fonts/Approach-Regular.woff") format("woff"), url("../asset/platform/fonts/Approach-Regular.ttf") format("truetype");
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -305,7 +345,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-MediumItalic.eot");
   src: local("Approach Medium Italic"), local("Approach-MediumItalic"), url("../asset/platform/fonts/Approach-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-MediumItalic.woff2") format("woff2"), url("../asset/platform/fonts/Approach-MediumItalic.woff") format("woff"), url("../asset/platform/fonts/Approach-MediumItalic.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: italic;
 }
 
@@ -313,7 +353,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-Medium.eot");
   src: local("Approach Medium"), local("Approach-Medium"), url("../asset/platform/fonts/Approach-Medium.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-Medium.woff2") format("woff2"), url("../asset/platform/fonts/Approach-Medium.woff") format("woff"), url("../asset/platform/fonts/Approach-Medium.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -321,7 +361,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-SemiBoldItalic.eot");
   src: local("Approach SemiBold Italic"), local("Approach-SemiBoldItalic"), url("../asset/platform/fonts/Approach-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-SemiBoldItalic.woff2") format("woff2"), url("../asset/platform/fonts/Approach-SemiBoldItalic.woff") format("woff"), url("../asset/platform/fonts/Approach-SemiBoldItalic.ttf") format("truetype");
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -329,7 +369,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-SemiBold.eot");
   src: local("Approach SemiBold"), local("Approach-SemiBold"), url("../asset/platform/fonts/Approach-SemiBold.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-SemiBold.woff2") format("woff2"), url("../asset/platform/fonts/Approach-SemiBold.woff") format("woff"), url("../asset/platform/fonts/Approach-SemiBold.ttf") format("truetype");
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -337,7 +377,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-BoldItalic.eot");
   src: local("Approach SemiBold Italic"), local("Approach-BoldItalic"), url("../asset/platform/fonts/Approach-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-BoldItalic.woff2") format("woff2"), url("../asset/platform/fonts/Approach-BoldItalic.woff") format("woff"), url("../asset/platform/fonts/Approach-BoldItalic.ttf") format("truetype");
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -345,7 +385,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-Bold.eot");
   src: local("Approach Bold"), local("Approach-Bold"), url("../asset/platform/fonts/Approach-Bold.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-Bold.woff2") format("woff2"), url("../asset/platform/fonts/Approach-Bold.woff") format("woff"), url("../asset/platform/fonts/Approach-Bold.ttf") format("truetype");
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -353,7 +393,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-BlackItalic.eot");
   src: local("Approach Black Italic"), local("Approach-BlackItalic"), url("../asset/platform/fonts/Approach-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-BlackItalic.woff2") format("woff2"), url("../asset/platform/fonts/Approach-BlackItalic.woff") format("woff"), url("../asset/platform/fonts/Approach-BlackItalic.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: 800;
   font-style: italic;
 }
 
@@ -361,7 +401,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-Black.eot");
   src: local("Approach Black"), local("Approach-Black"), url("../asset/platform/fonts/Approach-Black.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-Black.woff2") format("woff2"), url("../asset/platform/fonts/Approach-Black.woff") format("woff"), url("../asset/platform/fonts/Approach-Black.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -369,7 +409,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-ExtraBlackItalic.eot");
   src: local("Approach ExtraBlack Italic"), local("Approach-ExtraBlackItalic"), url("../asset/platform/fonts/Approach-ExtraBlackItalic.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-ExtraBlackItalic.woff2") format("woff2"), url("../asset/platform/fonts/Approach-ExtraBlackItalic.woff") format("woff"), url("../asset/platform/fonts/Approach-ExtraBlackItalic.ttf") format("truetype");
-  font-weight: 800;
+  font-weight: 900;
   font-style: italic;
 }
 
@@ -377,7 +417,7 @@ section {
   font-family: 'Approach';
   src: url("../asset/platform/fonts/Approach-ExtraBlack.eot");
   src: local("Approach ExtraBlack"), local("Approach-ExtraBlack"), url("../asset/platform/fonts/Approach-ExtraBlack.eot?#iefix") format("embedded-opentype"), url("../asset/platform/fonts/Approach-ExtraBlack.woff2") format("woff2"), url("../asset/platform/fonts/Approach-ExtraBlack.woff") format("woff"), url("../asset/platform/fonts/Approach-ExtraBlack.ttf") format("truetype");
-  font-weight: 800;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -407,17 +447,17 @@ section {
   opacity: 1;
 }
 
-.h1--fa, .h2--fa, .h3--fa, .h4--fa, .h5--fa, .h6--fa, .subtitlei--fa, .subtitleii--fa, .bodyi--fa, .bodyii--fa, .button--fa, .caption--fa, .overline--fa {
-  font-family: "IRRoya";
+.h1--fa, .h2--fa, .h3--fa, .h4--fa, .h5--fa, .h6--fa, .subtitlei--fa, .subtitleii--fa, .bodyi--fa, .bodyii--fa, .button--fa, .caption--fa, .overline--fa, .dcaption--fa {
+  font-family: "Vazir";
   text-align: right;
   direction: rtl;
 }
 
-h1, .h1 {
+h1, .h1, .dh1 {
   font-family: "Arvo", serif;
 }
 
-h1::before, .h1::before {
+h1::before, .h1::before, .dh1::before {
   height: 16rem;
   display: block;
   content: " ";
@@ -426,7 +466,7 @@ h1::before, .h1::before {
 }
 
 @media only screen and (max-width: 600px) {
-  h1::before, .h1::before {
+  h1::before, .h1::before, .dh1::before {
     height: 14rem;
     margin-top: -14rem;
   }
@@ -451,6 +491,10 @@ h2::before, .h2::before, h3::before, .h3::before, h4::before, .h4::before, h5::b
   }
 }
 
+.dh2, .dh3, .dh4, .dh5, .dh6 {
+  font-family: "Approach";
+}
+
 h1, .h1 {
   font-weight: 400;
   font-size: 12rem;
@@ -467,7 +511,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-weight: 200;
+  font-weight: 100;
   font-size: 7.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -481,7 +525,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-weight: 300;
+  font-weight: normal;
   font-size: 5.25rem;
   text-transform: capitalize;
 }
@@ -494,7 +538,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-weight: 100;
+  font-weight: normal;
   font-size: 4rem;
   text-transform: capitalize;
   padding-bottom: 1rem;
@@ -508,44 +552,44 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-weight: 300;
+  font-weight: normal;
   font-size: 2.75rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 h6, .h6 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 .subtitlei {
-  font-weight: 300;
+  font-weight: normal;
   font-size: 2rem;
   font-family: "Approach";
 }
 
 .subtitleii {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.75rem;
   font-family: "Approach";
 }
 
 .bodyi {
-  font-weight: 200;
+  font-weight: 100;
   font-size: 2rem;
   font-family: "Approach";
 }
 
 .bodyii {
-  font-weight: 200;
+  font-weight: 100;
   font-size: 1.75rem;
   font-family: "Approach";
 }
 
 .button {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 2rem;
   font-family: "Approach";
   text-transform: uppercase;
@@ -561,7 +605,7 @@ h6, .h6 {
 }
 
 .caption {
-  font-weight: 200;
+  font-weight: 100;
   font-size: 1.75rem;
   margin-top: 1rem;
   font-family: "Approach";
@@ -572,7 +616,7 @@ h6, .h6 {
 }
 
 .overline {
-  font-weight: 200;
+  font-weight: 100;
   font-size: 1.25rem;
   font-family: "Approach";
   letter-spacing: 1.5px;
@@ -587,65 +631,65 @@ a {
 }
 
 .h1--fa {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 12rem;
 }
 
 .h2--fa {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 7.5rem;
 }
 
 .h3--fa {
-  font-weight: 400;
-  font-size: 5.25rem;
+  font-weight: normal;
+  font-size: 6rem;
 }
 
 .h4--fa {
-  font-weight: 300;
-  font-size: 4rem;
+  font-weight: normal;
+  font-size: 4.25rem;
 }
 
 .h5--fa {
-  font-weight: 400;
-  font-size: 2.75rem;
+  font-weight: normal;
+  font-size: 3rem;
 }
 
 .h6--fa {
-  font-weight: 400;
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 2.5rem;
 }
 
 .subtitlei--fa {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 2rem;
 }
 
 .subtitleii--fa {
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1.75rem;
 }
 
 .bodyi--fa {
-  font-weight: 400;
+  font-weight: 100;
   font-size: 2rem;
   line-height: 22px;
 }
 
 .bodyii--fa {
-  font-weight: 400;
+  font-weight: 100;
   font-size: 1.75rem;
   line-height: 21px;
 }
 
 .button--fa {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2rem;
   line-height: 19px;
 }
 
 .caption--fa {
-  font-weight: 400;
+  font-weight: 100;
   font-size: 1.75rem;
   margin-top: 1rem;
   display: inline-block;
@@ -654,35 +698,149 @@ a {
 }
 
 .overline--fa {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 1.25rem;
 }
 
 .do {
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #26c260;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #38934D;
   padding-top: 2rem;
   font-family: "Approach";
   margin-bottom: -.75rem;
 }
 
 .dont {
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #d73400;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #df5050;
   padding-top: 2rem;
   font-family: "Approach";
   margin-bottom: -.75rem;
 }
 
 .allowed {
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #fdc215;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #FAC32E;
   padding-top: 2rem;
   margin-bottom: -.75rem;
   font-family: "Approach";
+}
+
+.dh1 {
+  font-weight: 400;
+  font-size: 12rem;
+  word-break: break-word;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .dh1 {
+    font-weight: 400;
+    font-size: 6.5rem;
+  }
+}
+
+.dh2 {
+  font-weight: 100;
+  font-size: 7.5rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .dh2 {
+    font-weight: 300;
+    font-size: 5rem;
+  }
+}
+
+.dh3 {
+  font-weight: normal;
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .dh3 {
+    font-weight: 400;
+    font-size: 4.5rem;
+  }
+}
+
+.dh4 {
+  font-weight: normal;
+  font-size: 4.25rem;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .dh4 {
+    font-weight: 400;
+    font-size: 3.5rem;
+  }
+}
+
+.dh5 {
+  font-weight: normal;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.dh6 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.dsubtitlei {
+  font-weight: normal;
+  font-size: 2rem;
+  font-family: "Approach";
+}
+
+.dsubtitleii {
+  font-weight: 500;
+  font-size: 1.75rem;
+  font-family: "Approach";
+}
+
+.dbodyi {
+  font-weight: 100;
+  font-size: 2rem;
+  font-family: "Approach";
+}
+
+.dbodyii {
+  font-weight: 100;
+  font-size: 1.75rem;
+  font-family: "Approach";
+}
+
+.dbutton {
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Approach";
+  text-transform: uppercase;
+}
+
+.dcaption {
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-family: "Approach";
+}
+
+.doverline {
+  font-weight: 100;
+  font-size: 1.25rem;
+  font-family: "Approach";
+  letter-spacing: 1.25px;
+}
+
+.dcaption--fa {
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .wr {
@@ -1071,19 +1229,19 @@ a.toc-link:hover {
 .accordion__header {
   cursor: pointer;
   padding: 16px;
-  border-top: 1px solid #cdd0d0;
+  border-top: 1px solid #061f6b;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 
 .accordion__header:hover {
-  background-color: #cdd0d0;
+  background-color: #061f6b;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 
 .accordion__item:first-child > .accordion__header {
-  border-top: 0px solid #cdd0d0;
+  border-top: 0px solid #061f6b;
 }
 
 .accordion__body {

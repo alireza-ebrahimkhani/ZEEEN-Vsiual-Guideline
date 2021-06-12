@@ -1,16 +1,72 @@
 @import 'color';
 @import 'grid';
 @font-face {
-    font-family: 'IRRoya';
-    src: url('../asset/platform/fonts/IRRoya.eot');
-    src: local('IRRoya'), local('IRRoya'),
-        url('../asset/platform/fonts/IRRoya.eot?#iefix') format('embedded-opentype'),
-        url('../asset/platform/fonts/IRRoya.woff2') format('woff2'),
-        url('../asset/platform/fonts/IRRoya.woff') format('woff'),
-        url('../asset/platform/fonts/IRRoya.ttf') format('truetype');
+    font-family: 'Vazir';
+    src: url('../asset/platform/fonts/vazir/Vazir-Thin.eot');
+    src: local('Vazir-Thin'), local('Vazir-Thin'),
+        url('../asset/platform/fonts/vazir/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../asset/platform/fonts/vazir/Vazir-Thin.woff2') format('woff2'),
+        url('../asset/platform/fonts/vazir/Vazir-Thin.woff') format('woff'),
+        url('../asset/platform/fonts/vazir/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../asset/platform/fonts/vazir/Vazir-Light.eot');
+    src: local('Vazir-Light'), local('Vazir-Light'),
+        url('../asset/platform/fonts/vazir/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+        url('../asset/platform/fonts/vazir/Vazir-Light.woff2') format('woff2'),
+        url('../asset/platform/fonts/vazir/Vazir-Light.woff') format('woff'),
+        url('../asset/platform/fonts/vazir/Vazir-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Vazir';
+    src: url('../asset/platform/fonts/vazir/Vazir-Regular.eot');
+    src: local('Vazir-Regular'), local('Vazir-Regular'),
+        url('../asset/platform/fonts/vazir/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../asset/platform/fonts/vazir/Vazir-Regular.woff2') format('woff2'),
+        url('../asset/platform/fonts/vazir/Vazir-Regular.woff') format('woff'),
+        url('../asset/platform/fonts/vazir/Vazir-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../asset/platform/fonts/vazir/Vazir-Medium.eot');
+    src: local('Vazir-Medium'), local('Vazir-Medium'),
+        url('../asset/platform/fonts/vazir/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../asset/platform/fonts/vazir/Vazir-Medium.woff2') format('woff2'),
+        url('../asset/platform/fonts/vazir/Vazir-Medium.woff') format('woff'),
+        url('../asset/platform/fonts/vazir/Vazir-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../asset/platform/fonts/vazir/Vazir-Bold.eot');
+    src: local('Vazir-Bold'), local('Vazir-Bold'),
+        url('../asset/platform/fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../asset/platform/fonts/vazir/Vazir-Bold.woff2') format('woff2'),
+        url('../asset/platform/fonts/vazir/Vazir-Bold.woff') format('woff'),
+        url('../asset/platform/fonts/vazir/Vazir-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../asset/platform/fonts/vazir/Vazir-Black.eot');
+    src: local('Vazir-Black'), local('Vazir-Black'),
+        url('../asset/platform/fonts/vazir/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+        url('../asset/platform/fonts/vazir/Vazir-Black.woff2') format('woff2'),
+        url('../asset/platform/fonts/vazir/Vazir-Black.woff') format('woff'),
+        url('../asset/platform/fonts/vazir/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'Approach';
     src: url('../asset/platform/fonts/Approach-LightItalic.eot');
@@ -19,7 +75,7 @@
         url('../asset/platform/fonts/Approach-LightItalic.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-LightItalic.woff') format('woff'),
         url('../asset/platform/fonts/Approach-LightItalic.ttf') format('truetype');
-    font-weight: 200;
+    font-weight: 100;
     font-style: italic;
 }
 @font-face {
@@ -30,7 +86,7 @@
         url('../asset/platform/fonts/Approach-Light.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-Light.woff') format('woff'),
         url('../asset/platform/fonts/Approach-Light.ttf') format('truetype');
-    font-weight: 200;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -42,7 +98,7 @@
         url('../asset/platform/fonts/Approach-RegularItalic.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-RegularItalic.woff') format('woff'),
         url('../asset/platform/fonts/Approach-RegularItalic.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: normal;
     font-style: italic;
 }
 @font-face {
@@ -53,7 +109,7 @@
         url('../asset/platform/fonts/Approach-Regular.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-Regular.woff') format('woff'),
         url('../asset/platform/fonts/Approach-Regular.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -65,7 +121,7 @@
         url('../asset/platform/fonts/Approach-MediumItalic.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-MediumItalic.woff') format('woff'),
         url('../asset/platform/fonts/Approach-MediumItalic.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
 }
 @font-face {
@@ -76,7 +132,7 @@
         url('../asset/platform/fonts/Approach-Medium.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-Medium.woff') format('woff'),
         url('../asset/platform/fonts/Approach-Medium.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -88,7 +144,7 @@
         url('../asset/platform/fonts/Approach-SemiBoldItalic.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-SemiBoldItalic.woff') format('woff'),
         url('../asset/platform/fonts/Approach-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
 }
 @font-face {
@@ -99,7 +155,7 @@
         url('../asset/platform/fonts/Approach-SemiBold.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-SemiBold.woff') format('woff'),
         url('../asset/platform/fonts/Approach-SemiBold.ttf') format('truetype');
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -111,7 +167,7 @@
         url('../asset/platform/fonts/Approach-BoldItalic.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-BoldItalic.woff') format('woff'),
         url('../asset/platform/fonts/Approach-BoldItalic.ttf') format('truetype');
-    font-weight: 600;
+    font-weight: 700;
     font-style: italic;
 }
 @font-face {
@@ -122,7 +178,7 @@
         url('../asset/platform/fonts/Approach-Bold.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-Bold.woff') format('woff'),
         url('../asset/platform/fonts/Approach-Bold.ttf') format('truetype');
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -134,7 +190,7 @@
         url('../asset/platform/fonts/Approach-BlackItalic.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-BlackItalic.woff') format('woff'),
         url('../asset/platform/fonts/Approach-BlackItalic.ttf') format('truetype');
-    font-weight: 700;
+    font-weight: 800;
     font-style: italic;
 }
 @font-face {
@@ -145,7 +201,7 @@
         url('../asset/platform/fonts/Approach-Black.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-Black.woff') format('woff'),
         url('../asset/platform/fonts/Approach-Black.ttf') format('truetype');
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -157,7 +213,7 @@
         url('../asset/platform/fonts/Approach-ExtraBlackItalic.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-ExtraBlackItalic.woff') format('woff'),
         url('../asset/platform/fonts/Approach-ExtraBlackItalic.ttf') format('truetype');
-    font-weight: 800;
+    font-weight: 900;
     font-style: italic;
 }
 @font-face {
@@ -168,7 +224,7 @@
         url('../asset/platform/fonts/Approach-ExtraBlack.woff2') format('woff2'),
         url('../asset/platform/fonts/Approach-ExtraBlack.woff') format('woff'),
         url('../asset/platform/fonts/Approach-ExtraBlack.ttf') format('truetype');
-    font-weight: 800;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -205,7 +261,7 @@
         opacity: 1;
     }
 }
-$faFont: 'IRRoya';
+$faFont: 'Vazir';
 $enFont--approach: 'Approach';
 $enFont--arvo:'Arvo', serif;
 %faType{
@@ -242,6 +298,9 @@ $enFont--arvo:'Arvo', serif;
         }
     }
 }
+%denType{
+    font-family: $enFont--approach;
+}
 @mixin type ($weight, $size){
     font-weight: $weight;
     font-size: $size;
@@ -257,7 +316,7 @@ h1 , .h1{
     }
 }
 h2 , .h2{
-    @include type(200, 7.5rem);
+    @include type(100, 7.5rem);
     @extend %enType;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -267,7 +326,7 @@ h2 , .h2{
 }
 
 h3 , .h3{
-    @include type(300, 5.25rem);
+    @include type(normal, 5.25rem);
     @extend %enType;
 
     text-transform: capitalize;
@@ -276,7 +335,7 @@ h3 , .h3{
     }
 }
 h4 , .h4{
-    @include type(100, 4rem);
+    @include type(normal, 4rem);
     @extend %enType;
 
     text-transform: capitalize;
@@ -286,38 +345,38 @@ h4 , .h4{
     padding-bottom: 1rem;
 }
 h5 , .h5{
-    @include type(300, 2.75rem);
+    @include type(normal, 2.75rem);
     @extend %enType;
 
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
 h6 , .h6{
-    @include type(300, 2rem);
+    @include type(500, 2rem);
     @extend %enType;
 
     text-transform: uppercase;
     
 }
 .subtitlei{
-    @include type(300, 2rem);
+    @include type(normal, 2rem);
     font-family: $enFont--approach;
 }
 .subtitleii{
-    @include type(300, 1.75rem);
+    @include type(500, 1.75rem);
     font-family: $enFont--approach;
 }
 .bodyi{
-    @include type(200, 2rem);
+    @include type(100, 2rem);
     
     font-family: $enFont--approach;
 }
 .bodyii{
-    @include type(200, 1.75rem);
+    @include type(100, 1.75rem);
     font-family: $enFont--approach;
 }
 .button{
-    @include type(300, 2rem);
+    @include type(500, 2rem);
     font-family: $enFont--approach;
     text-transform: uppercase;
     color: $blue7 !important;
@@ -330,7 +389,7 @@ h6 , .h6{
     }
 }
 .caption{
-    @include type(200, 1.75rem);
+    @include type(100, 1.75rem);
     margin-top:1rem;
     font-family: $enFont--approach;
     display: inline-block;
@@ -339,7 +398,7 @@ h6 , .h6{
     float:left;
 }
 .overline{
-    @include type(200, 1.25rem);
+    @include type(100, 1.25rem);
     font-family: $enFont--approach;
     letter-spacing: 1.5px;
 }
@@ -349,86 +408,166 @@ a{
     transition: $motion;
 }
 .h1--fa{
-    @include type(300, 12rem);
+    @include type(100, 12rem);
     @extend %faType;
 }
 .h2--fa{
-    @include type(300, 7.5rem);
+    @include type(100, 7.5rem);
     @extend %faType;
 }
 .h3--fa{
-    @include type(400, 5.25rem);
+    @include type(normal, 6rem);
     @extend %faType;
 }
 .h4--fa{
-    @include type(300, 4rem);
+    @include type(normal, 4.25rem);
     @extend %faType;
 }
 .h5--fa{
-    @include type(400, 2.75rem);
+    @include type(normal, 3rem);
     @extend %faType;
 }
 .h6--fa{
-    @include type(400, 2rem);
+    @include type(600, 2.5rem);
     @extend %faType;
 }
 .subtitlei--fa{
-    @include type(400, 2rem);
+    @include type(normal, 2rem);
     @extend %faType;
 }
 .subtitleii--fa{
-    @include type(300, 1.75rem);
+    @include type(600, 1.75rem);
     @extend %faType;
 }
 .bodyi--fa{
-    @include type(400, 2rem);
+    @include type(100, 2rem);
     @extend %faType;
     line-height: 22px;
 }
 .bodyii--fa{
-    @include type(400, 1.75rem);
+    @include type(100, 1.75rem);
     @extend %faType;
     line-height: 21px;
 }
 .button--fa{
-    @include type(400, 2rem);
+    @include type(600, 2rem);
     @extend %faType;
     line-height: 19px;
 }
 .caption--fa{
-    @include type(400, 1.75rem);
+    @include type(100, 1.75rem);
     @extend %faType;
     margin-top: 1rem;
     display: inline-block;
     width: calc(50% - 1.5rem);
-
     line-height: 19px;
 }
 .overline--fa{
-    @include type(300, 1.25rem);
+    @include type(100, 1.25rem);
     @extend %faType;
 }
 .do{
-    font-weight: 500;
-    font-size: 1.5rem;
-    color:#26c260;
+    font-weight: 800;
+    font-size: 2rem;
+    color:#38934D;
     padding-top:2rem;
     font-family: $enFont--approach;
     margin-bottom: -.75rem;
 }
 .dont{
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: #d73400;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #df5050;
     padding-top:2rem;
     font-family: $enFont--approach;
     margin-bottom: -.75rem;
 }
 .allowed{
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: #fdc215;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #FAC32E;
     padding-top:2rem;
     margin-bottom: -.75rem;
     font-family: $enFont--approach;
+}
+
+.dh1{
+    @include type(400, 12rem);
+    @extend %enType--arvo;
+    word-break: break-word;
+    text-transform: uppercase;
+    @include mobile{
+        @include type(400, 6.5rem);
+    }
+}
+.dh2{
+    @include type(100, 7.5rem);
+    @extend %denType;
+    text-transform: uppercase;
+    @include mobile{
+        @include type(300, 5rem);
+    }
+}
+
+.dh3{
+    @include type(normal, 6rem);
+    @extend %denType;
+
+    text-transform: capitalize;
+    @include mobile{
+        @include type(400, 4.5rem);
+    }
+}
+.dh4{
+    @include type(normal, 4.25rem);
+    @extend %denType;
+    text-transform: capitalize;
+    @include mobile{
+        @include type(400, 3.5rem);
+    }
+}
+.dh5{
+    @include type(normal, 3rem);
+    @extend %denType;
+    text-transform: uppercase;
+}
+.dh6{
+    @include type(500, 2.5rem);
+    @extend %denType;
+}
+.dsubtitlei{
+    @include type(normal, 2rem);
+    font-family: $enFont--approach;
+}
+.dsubtitleii{
+    @include type(500, 1.75rem);
+    font-family: $enFont--approach;
+}
+.dbodyi{
+    @include type(100, 2rem);
+    
+    font-family: $enFont--approach;
+}
+.dbodyii{
+    @include type(100, 1.75rem);
+    font-family: $enFont--approach;
+}
+.dbutton{
+    @include type(500, 2rem);
+    font-family: $enFont--approach;
+    text-transform: uppercase;
+}
+.dcaption{
+    @include type(100, 1.5rem);
+    font-family: $enFont--approach;
+}
+.doverline{
+    @include type(100, 1.25rem);
+    font-family: $enFont--approach;
+    letter-spacing: 1.25px;
+}
+.dcaption--fa{
+    @include type(100, 1.5rem);
+    @extend %faType;
+    text-align: left;
 }
