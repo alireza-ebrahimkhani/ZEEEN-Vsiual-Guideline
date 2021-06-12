@@ -101,6 +101,10 @@ img {
   background-color: #082B96;
 }
 
+.panel {
+  padding-bottom: 20rem;
+}
+
 .wr {
   margin: 0 auto;
   -webkit-transition: unset;
@@ -705,7 +709,7 @@ a {
 .do {
   font-weight: 800;
   font-size: 2rem;
-  color: #38934D;
+  color: #26c260;
   padding-top: 2rem;
   font-family: "Approach";
   margin-bottom: -.75rem;
