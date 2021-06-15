@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+  <div class="container">
   <header class="header">
     <div class="header__hamico">
       <div class="header__hamline"></div>
@@ -59,14 +59,13 @@
             <nav class="toc js-toc header__nav"></nav>
           </li>
         </ul>
-        <br><br><br>
       </div>
       <div class="header__translate">
         <div class="header__transSwitch" onclick="toggleSwitch()">
           <div class="header__transPin"></div>
           <div class="header__transLine"></div>
         </div>
-        <spam class="header__transtxt bodyi">Fa</spam>
+        <spam class="header__transtxt bodyi">Farsi</spam>
       </div>
     </div>
   </header>
@@ -216,7 +215,7 @@
               <ul class="accordion__list">
                 <li class="accordion__item">
                   <div class="accordion__header">
-                    <p class="dh1">Heading 1</p>
+                    <p class="dh1">H1</p>
                   </div>
                   <div class="accordion__body">
                     <div class="accordion__info">
@@ -235,7 +234,7 @@
                 </li>
                 <li class="accordion__item">
                   <div class="accordion__header">
-                    <p class="dh2">Heading 2</p>
+                    <p class="dh2">H2</p>
                   </div>
                   <div class="accordion__body">
                     <div class="accordion__info">
@@ -254,7 +253,7 @@
                 </li>
                 <li class="accordion__item">
                   <div class="accordion__header">
-                    <p class="dh3">Heading 3</p>
+                    <p class="dh3">H3</p>
                   </div>
                   <div class="accordion__body">
                     <div class="accordion__info">
@@ -273,7 +272,7 @@
                 </li>
                 <li class="accordion__item">
                   <div class="accordion__header">
-                    <p class="dh4">Heading 4</p>
+                    <p class="dh4">H4</p>
                   </div>
                   <div class="accordion__body">
                     <div class="accordion__info">
@@ -292,7 +291,7 @@
                 </li>
                 <li class="accordion__item">
                   <div class="accordion__header">
-                    <p class="dh5">Heading 5</p>
+                    <p class="dh5">H5</p>
                   </div>
                   <div class="accordion__body">
                     <div class="accordion__info">
@@ -311,7 +310,7 @@
                 </li>
                 <li class="accordion__item">
                   <div class="accordion__header">
-                    <p class="dh6">Heading 6</p>
+                    <p class="dh6">H6</p>
                   </div>
                   <div class="accordion__body">
                     <div class="accordion__info">
@@ -592,7 +591,7 @@
                     </div>
                     <div class="accordion__info">
                       <p class="overline">Font size</p>
-                      <p class="bodyi">16px</p>
+                      <p class="bodyi">15px</p>
                     </div>
                     <div class="accordion__info">
                       <p class="overline">Font weight</p>
@@ -611,7 +610,7 @@
                     </div>
                     <div class="accordion__info">
                       <p class="overline">Font size</p>
-                      <p class="bodyi">14px</p>
+                      <p class="bodyi">13px</p>
                     </div>
                     <div class="accordion__info">
                       <p class="overline">Font weight</p>
@@ -630,7 +629,7 @@
                     </div>
                     <div class="accordion__info">
                       <p class="overline">Font size</p>
-                      <p class="bodyi">16px</p>
+                      <p class="bodyi">15px</p>
                     </div>
                     <div class="accordion__info">
                       <p class="overline">Font weight</p>
@@ -649,7 +648,7 @@
                     </div>
                     <div class="accordion__info">
                       <p class="overline">Font size</p>
-                      <p class="bodyi">14px</p>
+                      <p class="bodyi">13px</p>
                     </div>
                     <div class="accordion__info">
                       <p class="overline">Font weight</p>
@@ -1118,18 +1117,19 @@
       </section>
     </article>
   </main>
+  </div>
   <footer></footer>
   <script>
     tocbot.init({
       tocSelector: ".js-toc",
       contentSelector: ".js-toc-content",
-      headingSelector: "h1, h2",
+      HSelector: "h1, h2",
       hasInnerContainers: false,
       collapsibleClass: "is-collapsible",
       fixedSidebarOffset: "auto",
       scrollSmooth: false,
       contentSelector: ".js-toc-content",
-      headingsOffset: 80,
+      HsOffset: 80,
     });
   </script>
   <script>

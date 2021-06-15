@@ -7,6 +7,10 @@
 @import 'imgComparison';
 @import 'accordion';
 
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .header{
     position: fixed;
     margin: 6rem;
@@ -23,26 +27,34 @@
         width: calc(100% - 4rem);
     }
     &__sideBar{
-        padding: 3rem 3rem 3rem 3rem;
-        width: 204px;
+        position: fixed;
+        width: 252px;
         background-color: $yellow6;
         min-height: 13rem;
-        clip-path: polygon(0 0, calc(100% - 6rem) 0%, calc(100% - 6rem) 6rem, 100% 6rem, 100% 100%, 6rem 100%, 0% calc(100% - 6rem));
+        max-height: calc(100vh - 12rem);
+        clip-path: polygon(0 0, calc(100% - 12rem) 0%, calc(100% - 12rem) 9rem, 100% 9rem, 100% calc(100% - 6rem), calc(100% - 6rem) 100%, 0% 100%);
         @include tablet{
-            width: 100%;
+            width: calc(100% - 6rem);
+            max-height: calc(100vh - 6rem);
         }
+        @include tablet{
+            clip-path: polygon(0 0, calc(100% - 5rem) 0%, calc(100% - 5rem) 5rem, 100% 5rem, 100% 100%, 4rem 100%, 0% calc(100% - 4rem));
+             }
         @include mobile{
             min-height: 11rem;
-            padding: 2rem 2rem 2rem 2rem;
-            width: 100%;
+            max-height: calc(100vh - 4rem);
+            width: calc(100% - 4rem);
             clip-path: polygon(0 0, calc(100% - 5rem) 0%, calc(100% - 5rem) 5rem, 100% 5rem, 100% 100%, 4rem 100%, 0% calc(100% - 4rem));
         }
     }
     &__logo{
-        position: relative;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
         display: block;
-        height: 54px;
-        margin-bottom: 0rem;
+        height: 24px ;
+        padding: 3rem 3rem 0 3rem;
+        background-color: $yellow6;
     }
     &__logoSvgStatic{
         height: 3rem;
@@ -53,19 +65,18 @@
     }
     &__logoSvgDynamic{
         height: 3rem;
-
-        left: 68px;
+        left: 92px;
         position: absolute;
         display: inline-block;
         transition: $motion;
         @include tablet{
-            top: 30px;
-            left: 24px;
+            top: 54px;
+            left: 48px;
             margin-left: 0px;
         }
         &--inline{
-            top: 0;
-            left: 68px;
+            top: 24px;
+            left: 92px;
             transition: $motion;
         }
     }
@@ -88,17 +99,29 @@
     
     &__items{
         transition: $motion;
+        margin: 9rem 0rem 3rem 3rem;
+        padding-top: 3rem;
+        overflow-y: scroll;
+        max-height: calc(100vh - 29rem);
         @include tablet{
             max-height: 0;
+            overflow-y: hidden;
             visibility: hidden;
             opacity: 0;
             transition: $motion;
+            &--open{
+                visibility: visible;
+                opacity: 1;
+                max-height: calc(100vh - 18rem);
+                overflow-y: scroll;
+                transition: $motion;
         }
-        &--open{
-            visibility: visible;
-            opacity: 1;
-            max-height: 100vh;
-            transition: $motion;
+        }
+        @include mobile{
+            &--open{
+                max-height: calc(100vh - 16rem);
+        }
+        
         }
     }
     &__items a{
@@ -123,18 +146,25 @@
     &__translate{
         text-align: right;
         display: inline-block;
-        position: absolute;
-        right: 3rem;
-        bottom: 2.25rem;
+        margin: 0 1rem 3rem 3rem;
+        @include tablet{
+            height: 2.5rem;
+            display: block;
+            right: 2rem;
+            bottom: 1.75rem;
+            position: absolute;
+            top: 62px;
+            z-index: 101;
+        }
         @include mobile{
             right: 2rem;
             bottom: 1.75rem;
+            top: 58px;
         }
     }
     &__transtxt{
         float: right;
         position: relative;
-        margin-left: 1rem;
         color:$b;
     }
     &__transSwitch{
@@ -270,6 +300,9 @@
     @include mobile{
         margin-top: 24rem;
         padding-top: 16rem;
+    }
+    @include desktopx{
+        overflow: visible;
     }
     &__nav{
         position: fixed;
@@ -479,6 +512,10 @@
     }
     @include mobile{
         margin-left: -2rem;
+    }
+    @include desktopx{
+        margin-left: calc(-1 * (100vw - 1440px - 6rem));
+        overflow: hidden;
     }
     &_img{
         animation-name: animImg;

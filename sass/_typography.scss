@@ -432,20 +432,20 @@ a{
     @extend %faType;
 }
 .subtitlei--fa{
-    @include type(normal, 2rem);
+    @include type(normal, 1.875rem);
     @extend %faType;
 }
 .subtitleii--fa{
-    @include type(600, 1.75rem);
+    @include type(600, 1.625rem);
     @extend %faType;
 }
 .bodyi--fa{
-    @include type(100, 2rem);
+    @include type(100, 1.875rem);
     @extend %faType;
-    line-height: 22px;
+    line-height: 20px;
 }
 .bodyii--fa{
-    @include type(100, 1.75rem);
+    @include type(100, 1.625rem);
     @extend %faType;
     line-height: 21px;
 }
@@ -455,12 +455,12 @@ a{
     line-height: 19px;
 }
 .caption--fa{
-    @include type(100, 1.75rem);
+    @include type(100, 1.5rem);
     @extend %faType;
     margin-top: 1rem;
     display: inline-block;
     width: calc(50% - 1.5rem);
-    line-height: 19px;
+    line-height: 18px;
 }
 .overline--fa{
     @include type(100, 1.25rem);

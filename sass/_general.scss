@@ -33,12 +33,13 @@ body{
   
 
   ::-webkit-scrollbar-track {
-    background : $m1;
+    
   }
   
  
   ::-webkit-scrollbar-thumb {
-    background: $d1;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
   }
   
 

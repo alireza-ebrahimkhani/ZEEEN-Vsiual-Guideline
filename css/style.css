@@ -35,12 +35,9 @@ body {
   width: .5rem;
 }
 
-::-webkit-scrollbar-track {
-  background: #afb6b6;
-}
-
 ::-webkit-scrollbar-thumb {
-  background: #767f7f;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -149,7 +146,7 @@ img {
   margin: 0 auto;
   -webkit-transition: unset;
   transition: unset;
-  padding: 0 6rem 0 43.5rem;
+  padding: 0 6rem 0 49.5rem;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -666,23 +663,23 @@ a {
 
 .subtitlei--fa {
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.875rem;
 }
 
 .subtitleii--fa {
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.625rem;
 }
 
 .bodyi--fa {
   font-weight: 100;
-  font-size: 2rem;
-  line-height: 22px;
+  font-size: 1.875rem;
+  line-height: 20px;
 }
 
 .bodyii--fa {
   font-weight: 100;
-  font-size: 1.75rem;
+  font-size: 1.625rem;
   line-height: 21px;
 }
 
@@ -694,11 +691,11 @@ a {
 
 .caption--fa {
   font-weight: 100;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   display: inline-block;
   width: calc(50% - 1.5rem);
-  line-height: 19px;
+  line-height: 18px;
 }
 
 .overline--fa {
@@ -891,7 +888,7 @@ a {
   margin: 0 auto;
   -webkit-transition: unset;
   transition: unset;
-  padding: 0 6rem 0 43.5rem;
+  padding: 0 6rem 0 49.5rem;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1279,6 +1276,11 @@ a.toc-link:hover {
   margin-right: 2rem;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .header {
   position: fixed;
   margin: 6rem;
@@ -1303,35 +1305,47 @@ a.toc-link:hover {
 }
 
 .header__sideBar {
-  padding: 3rem 3rem 3rem 3rem;
-  width: 204px;
+  position: fixed;
+  width: 252px;
   background-color: #FFF129;
   min-height: 13rem;
-  -webkit-clip-path: polygon(0 0, calc(100% - 6rem) 0%, calc(100% - 6rem) 6rem, 100% 6rem, 100% 100%, 6rem 100%, 0% calc(100% - 6rem));
-          clip-path: polygon(0 0, calc(100% - 6rem) 0%, calc(100% - 6rem) 6rem, 100% 6rem, 100% 100%, 6rem 100%, 0% calc(100% - 6rem));
+  max-height: calc(100vh - 12rem);
+  -webkit-clip-path: polygon(0 0, calc(100% - 12rem) 0%, calc(100% - 12rem) 9rem, 100% 9rem, 100% calc(100% - 6rem), calc(100% - 6rem) 100%, 0% 100%);
+          clip-path: polygon(0 0, calc(100% - 12rem) 0%, calc(100% - 12rem) 9rem, 100% 9rem, 100% calc(100% - 6rem), calc(100% - 6rem) 100%, 0% 100%);
 }
 
 @media only screen and (max-width: 1023px) {
   .header__sideBar {
-    width: 100%;
+    width: calc(100% - 6rem);
+    max-height: calc(100vh - 6rem);
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .header__sideBar {
+    -webkit-clip-path: polygon(0 0, calc(100% - 5rem) 0%, calc(100% - 5rem) 5rem, 100% 5rem, 100% 100%, 4rem 100%, 0% calc(100% - 4rem));
+            clip-path: polygon(0 0, calc(100% - 5rem) 0%, calc(100% - 5rem) 5rem, 100% 5rem, 100% 100%, 4rem 100%, 0% calc(100% - 4rem));
   }
 }
 
 @media only screen and (max-width: 600px) {
   .header__sideBar {
     min-height: 11rem;
-    padding: 2rem 2rem 2rem 2rem;
-    width: 100%;
+    max-height: calc(100vh - 4rem);
+    width: calc(100% - 4rem);
     -webkit-clip-path: polygon(0 0, calc(100% - 5rem) 0%, calc(100% - 5rem) 5rem, 100% 5rem, 100% 100%, 4rem 100%, 0% calc(100% - 4rem));
             clip-path: polygon(0 0, calc(100% - 5rem) 0%, calc(100% - 5rem) 5rem, 100% 5rem, 100% 100%, 4rem 100%, 0% calc(100% - 4rem));
   }
 }
 
 .header__logo {
-  position: relative;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
   display: block;
-  height: 54px;
-  margin-bottom: 0rem;
+  height: 24px;
+  padding: 3rem 3rem 0 3rem;
+  background-color: #FFF129;
 }
 
 .header__logoSvgStatic {
@@ -1342,7 +1356,7 @@ a.toc-link:hover {
 
 .header__logoSvgDynamic {
   height: 3rem;
-  left: 68px;
+  left: 92px;
   position: absolute;
   display: inline-block;
   -webkit-transition: 0.3s all ease;
@@ -1351,15 +1365,15 @@ a.toc-link:hover {
 
 @media only screen and (max-width: 1023px) {
   .header__logoSvgDynamic {
-    top: 30px;
-    left: 24px;
+    top: 54px;
+    left: 48px;
     margin-left: 0px;
   }
 }
 
 .header__logoSvgDynamic--inline {
-  top: 0;
-  left: 68px;
+  top: 24px;
+  left: 92px;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
@@ -1389,24 +1403,35 @@ a.toc-link:hover {
 .header__items {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  margin: 9rem 0rem 3rem 3rem;
+  padding-top: 3rem;
+  overflow-y: scroll;
+  max-height: calc(100vh - 29rem);
 }
 
 @media only screen and (max-width: 1023px) {
   .header__items {
     max-height: 0;
+    overflow-y: hidden;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
   }
+  .header__items--open {
+    visibility: visible;
+    opacity: 1;
+    max-height: calc(100vh - 18rem);
+    overflow-y: scroll;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
 }
 
-.header__items--open {
-  visibility: visible;
-  opacity: 1;
-  max-height: 100vh;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
+@media only screen and (max-width: 600px) {
+  .header__items--open {
+    max-height: calc(100vh - 16rem);
+  }
 }
 
 .header__items a {
@@ -1438,22 +1463,32 @@ a.toc-link:hover {
 .header__translate {
   text-align: right;
   display: inline-block;
-  position: absolute;
-  right: 3rem;
-  bottom: 2.25rem;
+  margin: 0 1rem 3rem 3rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .header__translate {
+    height: 2.5rem;
+    display: block;
+    right: 2rem;
+    bottom: 1.75rem;
+    position: absolute;
+    top: 62px;
+    z-index: 101;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .header__translate {
     right: 2rem;
     bottom: 1.75rem;
+    top: 58px;
   }
 }
 
 .header__transtxt {
   float: right;
   position: relative;
-  margin-left: 1rem;
   color: black;
 }
 
@@ -1632,6 +1667,12 @@ a.toc-link:hover {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .main {
+    overflow: visible;
+  }
+}
+
 .main__nav {
   position: fixed;
   top: 15rem;
@@ -1647,7 +1688,7 @@ a.toc-link:hover {
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1440px) {
   .main__nav {
     width: 334px;
   }
@@ -1909,6 +1950,13 @@ a.toc-link:hover {
 @media only screen and (max-width: 600px) {
   .animImg {
     margin-left: -2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .animImg {
+    margin-left: calc(-1 * (100vw - 1440px - 6rem));
+    overflow: hidden;
   }
 }
 
