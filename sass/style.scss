@@ -7,6 +7,9 @@
 @import 'imgComparison';
 @import 'accordion';
 
+body{
+    overflow-x: hidden;
+}
 .container{
     max-width: 1440px;
     margin: 0 auto;
@@ -514,7 +517,7 @@
         margin-left: -2rem;
     }
     @include desktopx{
-        margin-left: calc(-1 * (100vw - 1440px - 6rem));
+        margin-left: calc(-1 * ((100vw - 1440px) / 2) - 43.5rem - 6rem);
         overflow: hidden;
     }
     &_img{

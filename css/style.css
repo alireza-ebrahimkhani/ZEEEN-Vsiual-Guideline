@@ -37,7 +37,6 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.5);
-  position: absolute;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1276,6 +1275,10 @@ a.toc-link:hover {
   margin-right: 2rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -1955,7 +1958,7 @@ a.toc-link:hover {
 
 @media only screen and (min-width: 1440px) {
   .animImg {
-    margin-left: calc(-1 * (100vw - 1440px - 6rem));
+    margin-left: calc(-1 * ((100vw - 1440px) / 2) - 43.5rem - 6rem);
     overflow: hidden;
   }
 }
