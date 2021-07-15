@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 //translate switch
+/*
 function toggleSwitch() {
     var transSwitch = document.querySelector(".header__transLine").classList.toggle('header__transLine--active');;
     var transPin = document.querySelector(".header__transPin").classList.toggle('header__transPin--active');
@@ -71,3 +72,4 @@ function toggleSwitch() {
         textFa_p.classList.toggle('fa--show');
     });
 }
+*/
