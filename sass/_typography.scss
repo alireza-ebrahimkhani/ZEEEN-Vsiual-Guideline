@@ -327,7 +327,7 @@ h2 , .h2{
 h3 , .h3{
     @include type(normal, 5.25rem);
     @extend %enType;
-
+    margin-bottom: 1rem;
     text-transform: capitalize;
     @include mobile{
         @include type(400, 4.5rem);
@@ -476,7 +476,7 @@ a{
 .dont{
     font-weight: 800;
     font-size: 2rem;
-    color: #df5050;
+    color: #d73400;
     padding-top:2rem;
     font-family: $enFont--approach;
     margin-bottom: -.75rem;
